@@ -1,0 +1,580 @@
+[
+  {
+    "title": "Refereeing",
+    "code": "refereeing",
+    "items": [
+      {
+        "title": "Luck Roll",
+        "type": "single-roll",
+        "code": "refereeing-luck-roll"
+      }
+    ]
+  },
+  {
+    "title": "Travel",
+    "code": "travel",
+    "items": [
+      {
+        "title": "Wilderness Roll",
+        "code": "travel-wilderness-roll",
+        "type": "single-roll"
+      },
+      {
+        "title": "Travelling Blind",
+        "code": "travel-travelling-blind",
+        "type": "single-roll"
+      },
+      {
+        "title": "Dire Weather",
+        "code": "travel-dire-weather",
+        "type": "single-roll"
+      },
+      {
+        "title": "Local Mood",
+        "code": "travel-local-mood",
+        "type": "single-roll"
+      }
+    ]
+  },
+  {
+    "title": "Time",
+    "code": "time",
+    "items": [
+      {
+        "title": "Passage Of Time",
+        "code": "time-passage-of-time",
+        "type": "single-roll"
+      },
+      {
+        "title": "Unresolved Situations",
+        "code": "time-unresolved-situations",
+        "type": "single-roll"
+      }
+    ]
+  },
+  {
+    "title": "Dominion",
+    "code": "dominion",
+    "items": [
+      {
+        "title": "Crisis Roll",
+        "code": "dominion-crisis-roll",
+        "type": "single-roll"
+      },
+      { "title": "Crisis", "code": "dominion-crisis", "type": "single-roll" }
+    ]
+  },
+  {
+    "title": "Authority",
+    "code": "authority",
+    "items": [
+      {
+        "title": "Increased Taxes",
+        "code": "authority-increased-taxes",
+        "type": "single-roll"
+      },
+      {
+        "title": "Drama In Court",
+        "code": "authority-drama-in-court",
+        "type": "single-roll"
+      }
+    ]
+  },
+  {
+    "title": "Sparks",
+    "code": "sparks",
+    "items": [
+      {
+        "title": "All Sparks",
+        "code": "sparks-all-sparks",
+        "type": "multiple-single-roll",
+        "formula": "(d6-1)*12+d12",
+        "sparks": [
+          { "code": "sparks-dwelling", "title": "Dwelling" },
+          { "code": "sparks-sanctum", "title": "Sanctum" },
+          { "code": "sparks-monument", "title": "Monument" },
+          { "code": "sparks-hazard", "title": "Hazard" },
+          { "code": "sparks-curse", "title": "Curse" },
+          { "code": "sparks-ruin", "title": "Ruin" },
+          { "code": "sparks-person", "title": "Person" },
+          { "code": "sparks-name", "title": "Name" },
+          { "code": "sparks-characteristic", "title": "Characteristic" },
+          { "code": "sparks-object", "title": "Object" },
+          { "code": "sparks-beast", "title": "Beast" },
+          { "code": "sparks-state", "title": "State" },
+          { "code": "sparks-theme", "title": "Theme" }
+        ]
+      },
+      { "title": "Dwelling", "code": "sparks-dwelling", "type": "single-roll" },
+      { "title": "Sanctum", "code": "sparks-sanctum", "type": "single-roll" },
+      { "title": "Monument", "code": "sparks-monument", "type": "single-roll" },
+      { "title": "Hazard", "code": "sparks-hazard", "type": "single-roll" },
+      { "title": "Curse", "code": "sparks-curse", "type": "single-roll" },
+      { "title": "Ruin", "code": "sparks-ruin", "type": "single-roll" },
+      { "title": "Person", "code": "sparks-person", "type": "single-roll" },
+      { "title": "Name", "code": "sparks-name", "type": "single-roll" },
+      {
+        "title": "Characteristic",
+        "code": "sparks-characteristic",
+        "type": "single-roll"
+      },
+      { "title": "Object", "code": "sparks-object", "type": "single-roll" },
+      { "title": "Beast", "code": "sparks-beast", "type": "single-roll" },
+      { "title": "State", "code": "sparks-state", "type": "single-roll" },
+      { "title": "Theme", "code": "sparks-theme", "type": "single-roll" }
+    ]
+  },
+  {
+    "title": "Sparks - Nature",
+    "code": "sparks-nature",
+    "items": [
+      {
+        "title": "Land",
+        "code": "sparks-nature-land",
+        "type": "multiple-rolls",
+        "sparks": [
+          { "code": "nature-land-character", "title": "Characters" },
+          { "code": "nature-land-landscape", "title": "Landscape" }
+        ]
+      },
+      {
+        "title": "Sky",
+        "code": "sparks-nature-sky",
+        "type": "multiple-rolls",
+        "sparks": [
+          { "code": "nature-sky-tone", "title": "Tone" },
+          { "code": "nature-sky-texture", "title": "Texture" }
+        ]
+      },
+      {
+        "title": "Water",
+        "code": "sparks-nature-water",
+        "type": "multiple-rolls",
+        "sparks": [
+          { "code": "nature-water-tone", "title": "Tone" },
+          { "code": "nature-water-texture", "title": "Texture" }
+        ]
+      },
+      {
+        "title": "Weather",
+        "code": "sparks-nature-weather",
+        "type": "multiple-rolls",
+        "sparks": [
+          { "code": "nature-weather-description", "title": "Description" },
+          { "code": "nature-weather-element", "title": "Element" }
+        ]
+      },
+      {
+        "title": "Flora",
+        "code": "sparks-nature-flora",
+        "type": "multiple-rolls",
+        "sparks": [
+          { "code": "nature-flora-nature", "title": "Nature" },
+          { "code": "nature-flora-form", "title": "Form" }
+        ]
+      },
+      {
+        "title": "Fauna",
+        "code": "sparks-nature-fauna",
+        "type": "multiple-rolls",
+        "sparks": [
+          { "code": "nature-fauna-nature", "title": "Nature" },
+          { "code": "nature-fauna-form", "title": "Form" }
+        ]
+      },
+      {
+        "title": "Feature",
+        "code": "sparks-nature-feature",
+        "type": "multiple-rolls",
+        "sparks": [
+          { "code": "nature-feature-nature", "title": "Nature" },
+          { "code": "nature-feature-form", "title": "Forme" }
+        ]
+      },
+      {
+        "title": "Wonder",
+        "code": "sparks-nature-wonder",
+        "type": "multiple-rolls",
+        "sparks": [
+          { "code": "nature-wonder-theme", "title": "Theme" },
+          { "code": "nature-wonder-element", "title": "Element" }
+        ]
+      },
+      {
+        "title": "Otherworld",
+        "code": "sparks-nature-otherworld",
+        "type": "multiple-rolls",
+        "sparks": [
+          { "code": "nature-otherworld-character", "title": "Character" },
+          { "code": "nature-otherworld-landscape", "title": "Landscape" }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Sparks - Civilisation",
+    "code": "sparks-civilisation",
+    "items": [
+      {
+        "title": "Holding",
+        "code": "sparks-civilisation-holding",
+        "type": "multiple-rolls",
+        "sparks": [
+          { "code": "civilisation-holding-style", "title": "Style" },
+          { "code": "civilisation-holding-feature", "title": "Feature" }
+        ]
+      },
+      {
+        "title": "Bailey",
+        "code": "sparks-civilisation-bailey",
+        "type": "multiple-rolls",
+        "sparks": [
+          { "code": "civilisation-bailey-style", "title": "Style" },
+          { "code": "civilisation-bailey-feature", "title": "Feature" }
+        ]
+      },
+      {
+        "title": "Keep",
+        "code": "sparks-civilisation-keep",
+        "type": "multiple-rolls",
+        "sparks": [
+          { "code": "civilisation-keep-centrepiece", "title": "Centrepiece" },
+          { "code": "civilisation-keep-decoration", "title": "Decoration" }
+        ]
+      },
+      {
+        "title": "Food",
+        "code": "sparks-civilisation-food",
+        "type": "multiple-rolls",
+        "sparks": [
+          { "code": "civilisation-food-quality", "title": "Quality" },
+          { "code": "civilisation-food-type", "title": "Type" }
+        ]
+      },
+      {
+        "title": "Goods",
+        "code": "sparks-civilisation-goods",
+        "type": "multiple-rolls",
+        "sparks": [
+          { "code": "civilisation-goods-theme", "title": "Theme" },
+          { "code": "civilisation-goods-type", "title": "Type" }
+        ]
+      },
+      {
+        "title": "Luxuries",
+        "code": "sparks-civilisation-luxuries",
+        "type": "multiple-rolls",
+        "sparks": [
+          { "code": "civilisation-luxuries-rarity", "title": "Rarity" },
+          { "code": "civilisation-luxuries-type", "title": "Type" }
+        ]
+      },
+      {
+        "title": "Drama",
+        "code": "sparks-civilisation-drama",
+        "type": "multiple-rolls",
+        "sparks": [
+          { "code": "civilisation-drama-theme", "title": "Theme" },
+          { "code": "civilisation-drama-detail", "title": "Detail" }
+        ]
+      },
+      {
+        "title": "Woe",
+        "code": "sparks-civilisation-woe",
+        "type": "multiple-rolls",
+        "sparks": [
+          { "code": "civilisation-woe-description", "title": "Description" },
+          { "code": "civilisation-woe-incident", "title": "Incident" }
+        ]
+      },
+      {
+        "title": "News",
+        "code": "sparks-civilisation-news",
+        "type": "multiple-rolls",
+        "sparks": [
+          { "code": "civilisation-news-subject", "title": "Subject" },
+          { "code": "civilisation-news-mood", "title": "Mood" }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Sparks - People",
+    "code": "sparks-people",
+    "items": [
+      {
+        "title": "Appearance",
+        "code": "sparks-people-appearance",
+        "type": "multiple-rolls",
+        "sparks": [
+          { "code": "people-appearance-physique", "title": "Physique" },
+          { "code": "people-appearance-dress", "title": "Dress" }
+        ]
+      },
+      {
+        "title": "Voice",
+        "code": "sparks-people-voice",
+        "type": "multiple-rolls",
+        "sparks": [
+          { "code": "people-voice-tone", "title": "Tone" },
+          { "code": "people-voice-manner", "title": "Manner" }
+        ]
+      },
+      {
+        "title": "Personality",
+        "code": "sparks-people-personality",
+        "type": "multiple-rolls",
+        "sparks": [
+          { "code": "people-personality-demeanour", "title": "Demeanour" },
+          { "code": "people-personality-interest", "title": "Interest" }
+        ]
+      },
+      {
+        "title": "Relationship",
+        "code": "sparks-people-relationship",
+        "type": "multiple-rolls",
+        "sparks": [
+          { "code": "people-relationship-state", "title": "State" },
+          { "code": "people-relationship-connection", "title": "Connection" }
+        ]
+      },
+      {
+        "title": "Desire",
+        "code": "sparks-people-desire",
+        "type": "multiple-rolls",
+        "sparks": [
+          { "code": "people-desire-ambition", "title": "Ambition" },
+          { "code": "people-desire-motive", "title": "Motive" }
+        ]
+      },
+      {
+        "title": "Task",
+        "code": "sparks-people-task",
+        "type": "multiple-rolls",
+        "sparks": [
+          { "code": "people-task-action", "title": "Action" },
+          { "code": "people-task-subject", "title": "Subject" }
+        ]
+      },
+      {
+        "title": "Background",
+        "code": "sparks-people-background",
+        "type": "multiple-rolls",
+        "sparks": [
+          { "code": "people-background-upbringing", "title": "Upbringing" },
+          { "code": "people-background-memory", "title": "Memory" }
+        ]
+      },
+      {
+        "title": "Ailment",
+        "code": "sparks-people-ailment",
+        "type": "multiple-rolls",
+        "sparks": [
+          { "code": "people-ailment-descriptor", "title": "Descriptor" },
+          { "code": "people-ailment-symptom", "title": "Symptom" }
+        ]
+      },
+      {
+        "title": "Heraldry",
+        "code": "sparks-people-heraldry",
+        "type": "multiple-rolls",
+        "sparks": [
+          { "code": "people-heraldry-palette", "title": "Palette" },
+          { "code": "people-heraldry-symbol", "title": "Symbol" }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Sparks - Combat",
+    "code": "sparks-combat",
+    "items": [
+      {
+        "title": "Soldier",
+        "code": "sparks-combat-soldier",
+        "type": "multiple-rolls",
+        "sparks": [
+          { "code": "combat-soldier-quality", "title": "Quality" },
+          { "code": "combat-soldier-type", "title": "Type" }
+        ]
+      },
+      {
+        "title": "Weapon",
+        "code": "sparks-combat-weapon",
+        "type": "multiple-rolls",
+        "sparks": [
+          { "code": "combat-weapon-descriptor", "title": "Descriptor" },
+          { "code": "combat-weapon-feature", "title": "Feature" }
+        ]
+      },
+      {
+        "title": "Manoeuvres",
+        "code": "sparks-combat-manoeuvres",
+        "type": "multiple-rolls",
+        "sparks": [
+          { "code": "combat-manoeuvres-action", "title": "Action" },
+          { "code": "combat-manoeuvres-intent", "title": "Intent" }
+        ]
+      },
+      {
+        "title": "Conflict",
+        "code": "sparks-combat-conflict",
+        "type": "multiple-rolls",
+        "sparks": [
+          { "code": "combat-conflict-dispute", "title": "Dispute" },
+          { "code": "combat-conflict-status", "title": "Status" }
+        ]
+      },
+      {
+        "title": "Duel",
+        "code": "sparks-combat-duel",
+        "type": "multiple-rolls",
+        "sparks": [
+          { "code": "combat-duel-stipulation", "title": "Stipulation" },
+          { "code": "combat-duel-twist", "title": "Twist" }
+        ]
+      },
+      {
+        "title": "Battlefield",
+        "code": "sparks-combat-battlefield",
+        "type": "multiple-rolls",
+        "sparks": [
+          { "code": "combat-battlefield-feature", "title": "Feature" },
+          { "code": "combat-battlefield-detail", "title": "Detail" }
+        ]
+      },
+      {
+        "title": "Deployment",
+        "code": "sparks-combat-deployment",
+        "type": "multiple-rolls",
+        "sparks": [
+          { "code": "combat-deployment-style", "title": "Style" },
+          { "code": "combat-deployment-formation", "title": "Formation" }
+        ]
+      },
+      {
+        "title": "Strategy",
+        "code": "sparks-combat-strategy",
+        "type": "multiple-rolls",
+        "sparks": [
+          { "code": "combat-strategy-plan", "title": "Plan" },
+          { "code": "combat-strategy-twist", "title": "Twist" }
+        ]
+      },
+      {
+        "title": "Event",
+        "code": "sparks-combat-event",
+        "type": "multiple-rolls",
+        "sparks": [
+          { "code": "combat-event-subject", "title": "Subject" },
+          { "code": "combat-event-event", "title": "Event" }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Extra",
+    "code": "sparks-extra",
+    "items": [
+      {
+        "title": "Weather",
+        "code": "extra-weather",
+        "type": "template",
+        "text": "The sky today shows {tone!lower!strong} {texture!pluralize!lower!strong}, amidst the {description!lower!strong} {element!lower!strong}.",
+        "keys": {
+          "tone": "nature-sky-tone",
+          "texture": "nature-sky-texture",
+          "description": "nature-weather-description",
+          "element": "nature-weather-element"
+        }
+      },
+      {
+        "title": "Person",
+        "code": "extra-person",
+        "type": "template",
+        "text": "{name!strong}: {demeanour!lower!strong}, {characteristic!lower!strong}. A {physique!noCase!strong} build with {dress!noCase!strong} clothing. {tone!articleFor!sentenceCase!strong} {tone!noCase!strong} tone and {manner!noCase!strong} mannerisms. Interested in {interest!noCase!strong}.",
+        "keys": {
+          "characteristic": "sparks-characteristic",
+          "name": "sparks-name",
+          "person": "sparks-person",
+          "physique": "people-appearance-physique",
+          "dress": "people-appearance-dress",
+          "tone": "people-voice-tone",
+          "manner": "people-voice-manner",
+          "demeanour": "people-personality-demeanour",
+          "interest": "people-personality-interest"
+        }
+      },
+      {
+        "title": "Holding",
+        "code": "extra-holding",
+        "type": "template",
+        "text": "Its defining feature is {holding_style!articleFor} {holding_style!lower!strong} {holding_feature!lower!strong}. Within the bailey stands {bailey_style!articleFor} {bailey_style!lower!strong} {bailey_feature!lower!strong}. Inside the keep is {keep_centrepiece!articleFor} {keep_centrepiece!lower!singular!strong}, adorned with {keep_decoration!lower!pluralize!strong}. Local delicacies are {food_quality!lower!strong} {food_type!lower!pluralize!strong}. The market thrives on {good_theme!lower!strong} {good_type!lower!pluralize!strong}, and the artisans are known for their {luxuries_rarity!strong!lower} {luxuries_type!lower!pluralize!strong}. The {news_mood!lower!strong} inhabitants are busy talking about {news_subject!articleFor} {news_subject!singular!lower!strong}.",
+        "keys": {
+          "holding_style": "civilisation-holding-style",
+          "holding_feature": "civilisation-holding-feature",
+          "bailey_style": "civilisation-bailey-style",
+          "bailey_feature": "civilisation-bailey-feature",
+          "keep_centrepiece": "civilisation-keep-centrepiece",
+          "keep_decoration": "civilisation-keep-decoration",
+          "land_character": "nature-land-character",
+          "land_landscape": "nature-land-landscape",
+          "food_quality": "civilisation-food-quality",
+          "food_type": "civilisation-food-type",
+          "good_theme": "civilisation-goods-theme",
+          "good_type": "civilisation-goods-type",
+          "luxuries_rarity": "civilisation-luxuries-rarity",
+          "luxuries_type": "civilisation-luxuries-type",
+          "news_subject": "civilisation-news-subject",
+          "news_mood": "civilisation-news-mood"
+        }
+      },
+      {
+        "title": "Land",
+        "code": "extra-land",
+        "type": "template",
+        "text": "In these {land_character!lower!strong} {land_landscape!lower!pluralize!strong}, one can observe the {flora_nature!lower!strong} {flora_form!lower!pluralize!strong} that thrive here. The area is home to {fauna_nature!lower!strong} {fauna_form!lower!pluralize!strong}, often seen near the {feature_nature!lower!strong} {feature_form!lower!strong}.",
+        "keys": {
+          "land_character": "nature-land-character",
+          "land_landscape": "nature-land-landscape",
+          "flora_nature": "nature-flora-nature",
+          "flora_form": "nature-flora-form",
+          "fauna_nature": "nature-fauna-nature",
+          "fauna_form": "nature-fauna-form",
+          "feature_nature": "nature-feature-nature",
+          "feature_form": "nature-feature-form"
+        }
+      },
+      {
+        "title": "Beast",
+        "code": "extra-beast",
+        "type": "template",
+        "text": "A {beast!lower!strong} {state!lower!strong} in the {land_character!lower!strong} {land_landscape!lower!strong}, surrounded by {flora_nature!lower!strong} {flora_form!pluralize!lower!strong}.",
+        "keys": {
+          "beast": "sparks-beast",
+          "state": "sparks-state",
+          "land_character": "nature-land-character",
+          "land_landscape": "nature-land-landscape",
+          "flora_nature": "nature-flora-nature",
+          "flora_form": "nature-flora-form"
+        }
+      },
+      { "title": "Seer", "code": "seers-name", "type": "single-roll" },
+      { "title": "Myth", "code": "myths-name", "type": "single-roll" },
+      {
+        "title": "Drama, Woe or News?",
+        "code": "extra-drama-woe-news",
+        "type": "template",
+        "text": "Drama, Woe or News? {result!strong}!!!",
+        "keys": { "result": "extra-drama-woe-news" }
+      },
+      {
+        "title": "The Seer Seeks",
+        "code": "sparks-seer-desires",
+        "type": "template",
+        "text": "From the {where!strong}, {want!strong} calls, and the Seer answers",
+        "keys": { "want": "extra-seer-want", "where": "extra-seer-where" }
+      }
+    ]
+  }
+]

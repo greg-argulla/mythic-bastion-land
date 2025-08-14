@@ -1,0 +1,5075 @@
+[
+  {
+    "type": "The True Knight",
+    "description": "A pact to uphold truth. The false slung broken upon their lies.",
+    "ability": {
+      "name": "Punitive Stroke",
+      "description": "Make a melee attack against a known liar. Get +d10 to the attack, ignoring armour."
+    },
+    "passion": {
+      "name": "Honesty",
+      "description": "Restore SPI when you tell the truth where a lie might be more beneficial."
+    },
+    "flavor": {
+      "name": "Symbol of Truth",
+      "flavor1": {
+        "name": "Trigger",
+        "code": "trigger",
+        "data": [
+          { "from": 1, "to": 1, "text": "Lying to you about their identity" },
+          { "from": 2, "to": 2, "text": "Giving false witness to you." },
+          { "from": 3, "to": 3, "text": "Giving you malicious advice." },
+          { "from": 4, "to": 4, "text": "Lying while bearing the shield." },
+          { "from": 5, "to": 5, "text": "Omitting key information to you." },
+          { "from": 6, "to": 6, "text": "Lying to you about their intent." }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Effect",
+        "code": "effect",
+        "data": [
+          { "from": 1, "to": 1, "text": "Golden Glow" },
+          { "from": 2, "to": 2, "text": "Turns Cold" },
+          { "from": 3, "to": 3, "text": "Gentle Hum" },
+          { "from": 4, "to": 4, "text": "Fragrant Aroma" },
+          { "from": 5, "to": 5, "text": "Distant Birdcall" },
+          { "from": 6, "to": 6, "text": "Loud Clang" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Petulant steed",
+      "guard": 5,
+      "clarity": 10,
+      "spirit": 5,
+      "vigour": 10
+    },
+    "companion": null,
+    "items": [
+      { "name": "Helm", "type": "helm", "armor": 1 },
+      { "name": "Plate", "type": "plate", "armor": 1 },
+      { "name": "Mail", "type": "coat", "armor": 1 },
+      {
+        "name": "Polished mace",
+        "type": "weapon",
+        "damage": "d8",
+        "hefty": true,
+        "long": false,
+        "slow": false
+      },
+      {
+        "name": "kite shield",
+        "type": "shield",
+        "description": "Marked with a symbol of the truth",
+        "armor": 1,
+        "damage": "d4"
+      }
+    ]
+  },
+  {
+    "type": "The Snare Knight",
+    "description": "Immersed within the woods. A sheriff of natural order",
+    "ability": {
+      "name": "Wild Eye",
+      "description": "Observe a beast in secret. Learn a useful truth about their habitat."
+    },
+    "passion": {
+      "name": "Empathy",
+      "description": "Restore SPI when you spare the life of a hostile animal."
+    },
+    "flavor": {
+      "name": "Knight & Companion",
+      "flavor1": {
+        "name": "History",
+        "code": "history",
+        "data": [
+          { "from": 1, "to": 1, "text": "Exiled" },
+          { "from": 2, "to": 2, "text": "Feral" },
+          { "from": 3, "to": 3, "text": "Vengeful" },
+          { "from": 4, "to": 4, "text": "Shamed" },
+          { "from": 5, "to": 5, "text": "Jovial" },
+          { "from": 6, "to": 6, "text": "Artistic" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Type",
+        "code": "type",
+        "data": [
+          { "from": 1, "to": 1, "text": "Otter" },
+          { "from": 2, "to": 2, "text": "Hare" },
+          { "from": 3, "to": 3, "text": "Rat" },
+          { "from": 4, "to": 4, "text": "Weasel" },
+          { "from": 5, "to": 5, "text": "Ferret" },
+          { "from": 6, "to": 6, "text": "Squirrel" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Tattered steed",
+      "guard": 2,
+      "clarity": 10,
+      "spirit": 5,
+      "vigour": 8
+    },
+    "companion": {
+      "name": "Companion",
+      "biography": "Partially understands human speech.",
+      "guard": 4,
+      "clarity": 10,
+      "spirit": 7,
+      "vigour": 5
+    },
+    "items": [
+      { "name": "Gambeson", "type": "coat", "armor": 1 },
+      {
+        "name": "Handaxe attached to Wildrope",
+        "type": "weapon",
+        "description": "Attached to Wildrope. (strong rope that blends perfectly into foliage),",
+        "damage": "d6",
+        "hefty": false,
+        "long": false,
+        "slow": false
+      }
+    ]
+  },
+  {
+    "type": "The Tourney Knight",
+    "description": "A calling brought a life of combat. Nay a protector, in fact a competitor.",
+    "ability": {
+      "name": "Champion Vow",
+      "description": "Use immediately before a combat where there is a prize at stake. +d6 to melee attacks for the whole combat."
+    },
+    "passion": {
+      "name": "Hatred",
+      "description": "Restore SPI when you refuse a plea for forgiveness."
+    },
+    "flavor": {
+      "name": "Calling and Helm",
+      "flavor1": {
+        "name": "Call to Battle",
+        "code": "call_to_battle",
+        "data": [
+          { "from": 1, "to": 1, "text": "Greed" },
+          { "from": 2, "to": 2, "text": "Bloodlust" },
+          { "from": 3, "to": 3, "text": "Glory" },
+          { "from": 4, "to": 4, "text": "Duty" },
+          { "from": 5, "to": 5, "text": "Pride" },
+          { "from": 6, "to": 6, "text": "Ambition" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Fancy Helm",
+        "code": "fancy_helm",
+        "data": [
+          { "from": 1, "to": 1, "text": "Lion" },
+          { "from": 2, "to": 2, "text": "Shark" },
+          { "from": 3, "to": 3, "text": "Great Crest" },
+          { "from": 4, "to": 4, "text": "Hawk" },
+          { "from": 5, "to": 5, "text": "Bull" },
+          { "from": 6, "to": 6, "text": "Demon" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Horned Stallion",
+      "guard": 4,
+      "clarity": 10,
+      "spirit": 5,
+      "vigour": 12,
+      "trample": "d6"
+    },
+    "companion": null,
+    "items": [
+      { "name": "Fancy helm", "type": "helm", "armor": 1 },
+      { "name": "Arena plate", "type": "plate", "armor": 1 },
+      { "name": "Gambeson", "type": "coat", "armor": 1 },
+      {
+        "name": "Greatlance",
+        "type": "weapon",
+        "description": "Hefty when mounted, slow on foot",
+        "damage": "2d10",
+        "hefty": false,
+        "long": false,
+        "slow": true
+      },
+      {
+        "name": "Javelin",
+        "type": "weapon",
+        "damage": "d6",
+        "hefty": false,
+        "long": false,
+        "slow": false
+      },
+      {
+        "name": "Javelin",
+        "type": "weapon",
+        "damage": "d6",
+        "hefty": false,
+        "long": false,
+        "slow": false
+      }
+    ]
+  },
+  {
+    "type": "The Bloody Knight",
+    "description": "Some were born to fight. This one birthed from the very blood of battle.",
+    "ability": {
+      "name": "Bloody Echo",
+      "description": "Use immediately after defeating an opponent. Your next melee attack in this combat gains Blast."
+    },
+    "passion": {
+      "name": "Justice",
+      "description": "Restore SPI when you restore the balance of justice."
+    },
+    "flavor": {
+      "name": "Rage Fuel",
+      "flavor1": {
+        "name": "Alcohol",
+        "code": "alcohol",
+        "data": [
+          { "from": 1, "to": 1, "text": "Burning Wine" },
+          { "from": 2, "to": 2, "text": "Strong Mead" },
+          { "from": 3, "to": 3, "text": "Spiced Ale" },
+          { "from": 4, "to": 4, "text": "Sour Milk" },
+          { "from": 5, "to": 5, "text": "Fermented Vegetable" },
+          { "from": 6, "to": 6, "text": "Blood Brew" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Hatred",
+        "code": "hatred",
+        "data": [
+          { "from": 1, "to": 1, "text": "The Rich" },
+          { "from": 2, "to": 2, "text": "Knights" },
+          { "from": 3, "to": 3, "text": "The Poor" },
+          { "from": 4, "to": 4, "text": "Seers" },
+          { "from": 5, "to": 5, "text": "The Sea" },
+          { "from": 6, "to": 6, "text": "The Sun" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Bullish warhorse",
+      "guard": 3,
+      "clarity": 5,
+      "spirit": 5,
+      "vigour": 15,
+      "trample": "d6"
+    },
+    "companion": null,
+    "items": [
+      { "name": "Helm", "type": "helm", "armor": 1 },
+      {
+        "name": "Brutal plate",
+        "type": "plate",
+        "description": "A1 only when Wounded",
+        "armor": 0
+      },
+      { "name": "Mail", "type": "coat", "armor": 1 },
+      {
+        "name": "Sacks of very strong alcohol, to which you're largely resistant",
+        "type": "misc"
+      },
+      {
+        "name": "Longaxe",
+        "type": "weapon",
+        "damage": "d10",
+        "hefty": false,
+        "long": true,
+        "slow": false
+      }
+    ]
+  },
+  {
+    "type": "The Moss Knight",
+    "description": "The tree and stone had no need to be taught. The wisest knew to study beneath them.",
+    "ability": {
+      "name": "Mosstongue",
+      "description": "Speak with uncut stones and particularly old trees. If you push them for too much knowledge they rebuke you, shunning you for the rest of the day."
+    },
+    "passion": {
+      "name": "Naturality",
+      "description": "Restore SPI when you reject an opportunity to sleep indoors, sleeping in nature instead."
+    },
+    "flavor": {
+      "name": "Full body Tattoos",
+      "flavor1": {
+        "name": "Design",
+        "code": "design",
+        "data": [
+          { "from": 1, "to": 1, "text": "Faded Spirals" },
+          { "from": 2, "to": 2, "text": "Blue Thorns" },
+          { "from": 3, "to": 3, "text": "Silver Stars" },
+          { "from": 4, "to": 4, "text": "Pale Snakes" },
+          { "from": 5, "to": 5, "text": "Red Bones" },
+          { "from": 6, "to": 6, "text": "Burnt Rings" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Effect",
+        "code": "effect",
+        "data": [
+          { "from": 1, "to": 1, "text": "Points to Water" },
+          { "from": 2, "to": 2, "text": "Burns before an ambush" },
+          { "from": 3, "to": 3, "text": "A1 in saltwater" },
+          { "from": 4, "to": 4, "text": "A1 under moonlight" },
+          { "from": 5, "to": 5, "text": "A1 in rivers or streams" },
+          { "from": 6, "to": 6, "text": "Conceals a third eye" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Pale steed",
+      "guard": 3,
+      "clarity": 12,
+      "spirit": 5,
+      "vigour": 8
+    },
+    "companion": null,
+    "items": [
+      { "name": "Mail coif", "type": "helm", "armor": 1 },
+      { "name": "Buckler", "type": "shield", "armor": 1, "damage": "d4" },
+      {
+        "name": "Branch cudgel",
+        "type": "weapon",
+        "damage": "d8",
+        "hefty": true,
+        "long": false,
+        "slow": false
+      }
+    ]
+  },
+  {
+    "type": "The War Knight",
+    "description": "Forged and broken in the bloodied mud. Won some, lost some, ever survived.",
+    "ability": {
+      "name": "Battle Awareness",
+      "description": "When fighting in a combat with at least 3 combatants on each side all your Gambits count as Strong Gambits."
+    },
+    "passion": {
+      "name": "Duty",
+      "description": "Restore SPI when you answer the call for martial service under a superior."
+    },
+    "flavor": {
+      "name": "Military Gear",
+      "flavor1": {
+        "name": "Special Polearm",
+        "code": "special_polearm",
+        "data": [
+          { "from": 1, "to": 1, "text": "+d10 vs mounted targets" },
+          { "from": 2, "to": 2, "text": "+d10 vs targets with a shield" },
+          { "from": 3, "to": 3, "text": "+d10 vs targets in armour" },
+          { "from": 4, "to": 4, "text": "+d10 vs targets without a shield" },
+          { "from": 5, "to": 5, "text": "+d10 vs beasts and monsters" },
+          { "from": 6, "to": 6, "text": "+d10 vs anybody attacking you" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Helm",
+        "code": "helm",
+        "data": [
+          { "from": 1, "to": 1, "text": "Veiled Leather Cowl" },
+          { "from": 2, "to": 2, "text": "Long Mail Hood" },
+          { "from": 3, "to": 3, "text": "Full Heavy Bucket" },
+          { "from": 4, "to": 4, "text": "Crow-Beaked" },
+          { "from": 5, "to": 5, "text": "Caged Visor" },
+          { "from": 6, "to": 6, "text": "Kettle Cap" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Stocky steed",
+      "guard": 2,
+      "clarity": 8,
+      "spirit": 5,
+      "vigour": 15
+    },
+    "companion": null,
+    "items": [
+      { "name": "Helm", "type": "helm", "armor": 1 },
+      { "name": "Gambeson", "type": "coat", "armor": 1 },
+      { "name": "Splint armor", "type": "plate", "armor": 1 },
+      { "name": "Whalebone chess set", "type": "misc" },
+      {
+        "name": "Special polearm",
+        "type": "weapon",
+        "damage": "d8",
+        "hefty": false,
+        "long": true,
+        "slow": false
+      }
+    ]
+  },
+  {
+    "type": "The Willow Knight",
+    "description": "The giants fought the storm, falling, all broken bones. The youth, thrown about, arose in the calm.",
+    "ability": {
+      "name": "Bend with the Wind",
+      "description": "When you use a Gambit to Move you count as having Armour 4 until your next turn. This does not stack with your actual armour."
+    },
+    "passion": {
+      "name": "Doubt",
+      "description": "Restore SPI when you defer to somebody more senior than you, even though you disagree."
+    },
+    "flavor": {
+      "name": "Memories of Home",
+      "flavor1": {
+        "name": "Place",
+        "code": "place",
+        "data": [
+          { "from": 1, "to": 1, "text": "Riverside" },
+          { "from": 2, "to": 2, "text": "Coastal" },
+          { "from": 3, "to": 3, "text": "Mountain" },
+          { "from": 4, "to": 4, "text": "Pine Forest" },
+          { "from": 5, "to": 5, "text": "Moor" },
+          { "from": 6, "to": 6, "text": "Castle" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Disaster",
+        "code": "disaster",
+        "data": [
+          { "from": 1, "to": 1, "text": "Death" },
+          { "from": 2, "to": 2, "text": "War" },
+          { "from": 3, "to": 3, "text": "Famine" },
+          { "from": 4, "to": 4, "text": "Plague" },
+          { "from": 5, "to": 5, "text": "Fire" },
+          { "from": 6, "to": 6, "text": "Flood" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Cautious steed",
+      "guard": 2,
+      "clarity": 15,
+      "spirit": 5,
+      "vigour": 10
+    },
+    "companion": null,
+    "items": [
+      { "name": "Gambeson", "type": "coat", "armor": 1 },
+      { "name": "Half-shield", "type": "shield", "armor": 1 },
+      {
+        "name": "Youthful Energy",
+        "type": "misc",
+        "description": "Use once only to treat a Mortal Wound as a normal wound)"
+      },
+      {
+        "name": "Old sword",
+        "type": "weapon",
+        "damage": "d8",
+        "hefty": true,
+        "long": false,
+        "slow": false
+      }
+    ]
+  },
+  {
+    "type": "The Gilded Knight",
+    "description": "A beacon of the brave and bold. All cloaked and masked in sunnen gold.",
+    "ability": {
+      "name": "Martyr-in-Waiting",
+      "description": "Use as a reaction to being Mortally Wounded. Allies fighting with you regain d6GD and get +d12 against your attacker for the combat."
+    },
+    "passion": {
+      "name": "Pride",
+      "description": "Restore SPI when you take personal credit for a great victory."
+    },
+    "flavor": {
+      "name": "The Cost",
+      "flavor1": {
+        "name": "Where did the armour show itself?",
+        "code": "where_did_the_armour_show_itself",
+        "data": [
+          { "from": 1, "to": 1, "text": "Lake" },
+          { "from": 2, "to": 2, "text": "Waterfall" },
+          { "from": 3, "to": 3, "text": "River" },
+          { "from": 4, "to": 4, "text": "Beach" },
+          { "from": 5, "to": 5, "text": "Cave" },
+          { "from": 6, "to": 6, "text": "Mountain" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "What was left behind?",
+        "code": "what_was_left_behind",
+        "data": [
+          { "from": 1, "to": 1, "text": "A Farm" },
+          { "from": 2, "to": 2, "text": "A Name" },
+          { "from": 3, "to": 3, "text": "Only Graves" },
+          { "from": 4, "to": 4, "text": "A Student" },
+          { "from": 5, "to": 5, "text": "A Teacher" },
+          { "from": 6, "to": 6, "text": "A Castle" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Majestic charger",
+      "guard": 4,
+      "clarity": 9,
+      "spirit": 12,
+      "vigour": 12,
+      "trample": "d6"
+    },
+    "companion": null,
+    "items": [
+      { "name": "Gambeson", "type": "coat", "armor": 1 },
+      {
+        "name": "Gold-masked helm",
+        "type": "helm",
+        "description": "Opponents who know the value of gold have their first ever attack against you Impaired",
+        "armor": 1
+      },
+      { "name": "Gold cloaked plate", "type": "plate", "armor": 1 },
+      {
+        "name": "Great mace",
+        "type": "weapon",
+        "damage": "d10",
+        "hefty": false,
+        "long": true,
+        "slow": false
+      }
+    ]
+  },
+  {
+    "type": "The Saddle Knight",
+    "description": "Within a blink they were atop their steed. Knight and beast at one, a red streak in the green.",
+    "ability": {
+      "name": "Song of the Steed",
+      "description": "Speak in a voice comprehensible to horses. They need reasoning with rather than commanding."
+    },
+    "passion": {
+      "name": "Certainty",
+      "description": "Restore SPI when you prove somebody wrong."
+    },
+    "flavor": {
+      "name": "Loyal Steed",
+      "flavor1": {
+        "name": "Appearance",
+        "code": "appearance",
+        "data": [
+          { "from": 1, "to": 1, "text": "Pristine" },
+          { "from": 2, "to": 2, "text": "Plaited" },
+          { "from": 3, "to": 3, "text": "Tall" },
+          { "from": 4, "to": 4, "text": "Golden" },
+          { "from": 5, "to": 5, "text": "Dark" },
+          { "from": 6, "to": 6, "text": "Stocky" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Temperament",
+        "code": "temperament",
+        "data": [
+          { "from": 1, "to": 1, "text": "Completely silent" },
+          { "from": 2, "to": 2, "text": "Highly alert" },
+          { "from": 3, "to": 3, "text": "Eternally valiant" },
+          { "from": 4, "to": 4, "text": "Fierce (d8 trample)" },
+          { "from": 5, "to": 5, "text": "Loved by other beasts" },
+          { "from": 6, "to": 6, "text": "Perfect sense of direction" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Beloved steed",
+      "guard": 4,
+      "clarity": 15,
+      "spirit": 7,
+      "vigour": 12
+    },
+    "companion": null,
+    "items": [
+      { "name": "Mail", "type": "coat", "armor": 1 },
+      {
+        "name": "Rider's plate",
+        "type": "plate",
+        "description": "A1 when mounted",
+        "armor": 0
+      },
+      {
+        "name": "Fine saddle and tack",
+        "type": "misc",
+        "description": "You can never be dismounted"
+      },
+      {
+        "name": "Rider's axe",
+        "type": "weapon",
+        "description": "+d6 when mounted, can be thrown",
+        "damage": "d6",
+        "hefty": false,
+        "long": false,
+        "slow": false
+      },
+      {
+        "name": "Rider's axe",
+        "type": "weapon",
+        "description": "+d6 when mounted, can be thrown",
+        "damage": "d6",
+        "hefty": false,
+        "long": false,
+        "slow": false
+      },
+      {
+        "name": "Rider's axe",
+        "type": "weapon",
+        "description": "+d6 when mounted, can be thrown",
+        "damage": "d6",
+        "hefty": false,
+        "long": false,
+        "slow": false
+      }
+    ]
+  },
+  {
+    "type": "The Riddle Knight",
+    "description": "The right words say everything and nothing. A different truth to each ear.",
+    "ability": {
+      "name": "Twisted Words",
+      "description": "Speak, but choose two different meanings, as different as you wish, even total opposites. Choose which meaning each listener takes from the words."
+    },
+    "passion": {
+      "name": "Integrity",
+      "description": "Restore SPI when you discredit somebody unworthy of their position."
+    },
+    "flavor": {
+      "name": "Moon Form",
+      "flavor1": {
+        "name": "Body",
+        "code": "body",
+        "data": [
+          { "from": 1, "to": 1, "text": "Muscular (d8 grasp)" },
+          { "from": 2, "to": 2, "text": "Shrunken (d6 bite)" },
+          { "from": 3, "to": 3, "text": "Stretched (d6 strike)" },
+          { "from": 4, "to": 4, "text": "Skeletal (d6 slash)" },
+          { "from": 5, "to": 5, "text": "Canine (d8 jaws)" },
+          { "from": 6, "to": 6, "text": "Feline (d6 claws)" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Visage",
+        "code": "visage",
+        "data": [
+          { "from": 1, "to": 1, "text": "Elderly" },
+          { "from": 2, "to": 2, "text": "Youthful" },
+          { "from": 3, "to": 3, "text": "Hideous" },
+          { "from": 4, "to": 4, "text": "Amorphous" },
+          { "from": 5, "to": 5, "text": "Horned" },
+          { "from": 6, "to": 6, "text": "Regal" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Shadowy horse",
+      "biography": "Very quiet",
+      "guard": 2,
+      "clarity": 15,
+      "spirit": 5,
+      "vigour": 8
+    },
+    "companion": null,
+    "items": [
+      { "name": "Light mail", "type": "coat", "armor": 1 },
+      {
+        "name": "Moon pendant",
+        "type": "misc",
+        "description": "Grants the wearer a false form under moonlight, roling each night"
+      },
+      {
+        "name": "Twisted bow",
+        "type": "weapon",
+        "damage": "d6",
+        "hefty": false,
+        "long": true,
+        "slow": false
+      }
+    ]
+  },
+  {
+    "type": "The Talon Knight",
+    "description": "The claw is nothing without the eye. The eye is nothing without the wing.",
+    "ability": {
+      "name": "Flockbond",
+      "description": "See through the eyes of your bird, and learn the local knowledge of any prey it eats."
+    },
+    "passion": {
+      "name": "Regret",
+      "description": "Restore SPI when you burn a part of your past."
+    },
+    "flavor": {
+      "name": "Loyal Bird",
+      "flavor1": {
+        "name": "Breed",
+        "code": "breed",
+        "data": [
+          { "from": 1, "to": 1, "text": "Fisherhawk (can dive into water)" },
+          { "from": 2, "to": 2, "text": "Cave Owl (nocturnal)" },
+          { "from": 3, "to": 3, "text": "Grey Raven (highly intelligent)" },
+          { "from": 4, "to": 4, "text": "Red Eagle (d6 Talons)" },
+          { "from": 5, "to": 5, "text": "Rock Falcon (preys on reptiles)" },
+          { "from": 6, "to": 6, "text": "Bog Vulture (5GD)" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Special Training",
+        "code": "special_training",
+        "data": [
+          { "from": 1, "to": 1, "text": "Singing" },
+          { "from": 2, "to": 2, "text": "Fighting Humans (+d6 vs humans)" },
+          { "from": 3, "to": 3, "text": "Silent Flight" },
+          { "from": 4, "to": 4, "text": "Delivery" },
+          { "from": 5, "to": 5, "text": "Stealing" },
+          { "from": 6, "to": 6, "text": "Fighting Birds (+d6 vs birds)" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Old steed",
+      "guard": 2,
+      "clarity": 8,
+      "spirit": 7,
+      "vigour": 8
+    },
+    "companion": {
+      "name": "Loyal bird",
+      "guard": 4,
+      "clarity": 10,
+      "spirit": 5,
+      "vigour": 5
+    },
+    "items": [
+      { "name": "Helm", "type": "helm", "armor": 1 },
+      {
+        "name": "Shield-gauntlet",
+        "type": "shield",
+        "armor": 1,
+        "damage": "d6"
+      },
+      {
+        "name": "Hookhammer",
+        "type": "weapon",
+        "description": "+d8 dropping from above",
+        "damage": "d8",
+        "hefty": true,
+        "long": false,
+        "slow": false
+      }
+    ]
+  },
+  {
+    "type": "The Barbed Knight",
+    "description": "Cruelty can bring a peace. Stone and spikes split into bloom.",
+    "ability": {
+      "name": "The Red Hunt",
+      "description": "Once each day, infuse a target’s spilt blood into an arrow to give it +d12 against the target. You can also taste a small amount of the blood to get a glimpse of their location."
+    },
+    "passion": {
+      "name": "Apathy",
+      "description": "Restore SPI when you reject a call for comfort."
+    },
+    "flavor": {
+      "name": "Bad Reputation",
+      "flavor1": {
+        "name": "Begrudging Ally",
+        "code": "begrudging_ally",
+        "data": [
+          { "from": 1, "to": 1, "text": "Eccentric Alchemist" },
+          { "from": 2, "to": 2, "text": "Humble Chronicler" },
+          { "from": 3, "to": 3, "text": "Surly Brewer" },
+          { "from": 4, "to": 4, "text": "Horse Breeder" },
+          { "from": 5, "to": 5, "text": "Elderly Innkeeper" },
+          { "from": 6, "to": 6, "text": "Petty Burglar" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Hated Enemy",
+        "code": "hated_enemy",
+        "data": [
+          { "from": 1, "to": 1, "text": "Rich Merchant" },
+          { "from": 2, "to": 2, "text": "Master Blacksmith" },
+          { "from": 3, "to": 3, "text": "Admired Knight" },
+          { "from": 4, "to": 4, "text": "Bandit Leader" },
+          { "from": 5, "to": 5, "text": "Retired General" },
+          { "from": 6, "to": 6, "text": "Mercenary Captain" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Vicious charger",
+      "guard": 3,
+      "clarity": 8,
+      "spirit": 5,
+      "vigour": 12,
+      "trample": "d6"
+    },
+    "companion": null,
+    "items": [
+      { "name": "Red cloaked mail", "type": "coat", "armor": 1 },
+      {
+        "name": "Jagged Spear",
+        "type": "weapon",
+        "description": "+d8 against a target you have Wounded or Scarred",
+        "damage": "d8",
+        "hefty": true,
+        "long": false,
+        "slow": false
+      },
+      {
+        "name": "Hunting bow",
+        "type": "weapon",
+        "damage": "d8",
+        "hefty": false,
+        "long": true,
+        "slow": false
+      }
+    ]
+  },
+  {
+    "type": "The Trail Knight",
+    "description": "More than foxes leave trails in their stead. Comings and goings laid plain as a thread",
+    "ability": {
+      "name": "Strands of Past",
+      "description": "By studying the ground for a whole Phase you can ask a single yes or no question about what happened here in the past few days."
+    },
+    "passion": {
+      "name": "Fear",
+      "description": "Restore SPI when refusing to go into the dark."
+    },
+    "flavor": {
+      "name": "Personal code",
+      "flavor1": {
+        "name": "Value",
+        "code": "value",
+        "data": [
+          { "from": 1, "to": 1, "text": "Honour" },
+          { "from": 2, "to": 2, "text": "Duty" },
+          { "from": 3, "to": 3, "text": "Loyalty" },
+          { "from": 4, "to": 4, "text": "Justice" },
+          { "from": 5, "to": 5, "text": "Respect" },
+          { "from": 6, "to": 6, "text": "Truth" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Forged by",
+        "code": "forged_by",
+        "data": [
+          { "from": 1, "to": 1, "text": "Battling a monster" },
+          { "from": 2, "to": 2, "text": "A raided village" },
+          { "from": 3, "to": 3, "text": "Rescuing the helpless" },
+          { "from": 4, "to": 4, "text": "Killing a tyrant" },
+          { "from": 5, "to": 5, "text": "A long journey" },
+          { "from": 6, "to": 6, "text": "Facing temptation" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Serene steed",
+      "guard": 3,
+      "clarity": 13,
+      "spirit": 5,
+      "vigour": 10
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Crow-beak axe",
+        "type": "weapon",
+        "damage": "d8",
+        "hefty": true,
+        "long": false,
+        "slow": false
+      },
+      { "name": "Beaten gambeson", "type": "coat", "armor": 1 },
+      {
+        "name": "Sanguine lens",
+        "type": "misc",
+        "description": "Traces of blood appear obvious when viewed through this"
+      }
+    ]
+  },
+  {
+    "type": "The Amber Knight",
+    "description": "Their wait has been longer than we could imagine. Their blade slow but unstoppable",
+    "ability": {
+      "name": "Patient Strike",
+      "description": "Make a melee Attack when you have not moved this turn. +d10 to the Attack. Ignore the target’s Armour and immunities of any sort. If this fails to defeat the opponent, take d6 Damage yourself."
+    },
+    "passion": {
+      "name": "Avarice",
+      "description": "Restore SPI when you gain significant wealth."
+    },
+    "flavor": {
+      "name": "A steady hand",
+      "flavor1": {
+        "name": "Pastime",
+        "code": "pastime",
+        "data": [
+          { "from": 1, "to": 1, "text": "Painting" },
+          { "from": 2, "to": 2, "text": "Miniature sculpture" },
+          { "from": 3, "to": 3, "text": "Embroidery" },
+          { "from": 4, "to": 4, "text": "Pottery" },
+          { "from": 5, "to": 5, "text": "Drawing" },
+          { "from": 6, "to": 6, "text": "Flower pressing" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Taught By",
+        "code": "taught_by",
+        "data": [
+          { "from": 1, "to": 1, "text": "Knight-Mentor" },
+          { "from": 2, "to": 2, "text": "Father" },
+          { "from": 3, "to": 3, "text": "Mother" },
+          { "from": 4, "to": 4, "text": "Brother" },
+          { "from": 5, "to": 5, "text": "Sister" },
+          { "from": 6, "to": 6, "text": "Self" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Loyal steed",
+      "guard": 3,
+      "clarity": 10,
+      "spirit": 5,
+      "vigour": 10,
+      "trample": "d6"
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Ancient greatblade",
+        "type": "weapon",
+        "damage": "2d10",
+        "hefty": false,
+        "long": false,
+        "slow": true
+      },
+      { "name": "Ancient mail", "type": "coat", "armor": 1 },
+      {
+        "name": "Amber amulet",
+        "type": "misc",
+        "description": "If placed in a fire, carries its warmth for a whole day"
+      }
+    ]
+  },
+  {
+    "type": "The Horde Knight",
+    "description": "In fury’s reign afore the rav’ning throng. In chaos born as knight where beast belong",
+    "ability": {
+      "name": "Pack Tactics",
+      "description": "Use before attacking with at least one ally. You may combine any number of dice into larger dice with a value equal to the total of the combined dice, to a maximum of d12 Damage. For example, combining a d4 and a d8 into a d12."
+    },
+    "passion": {
+      "name": "Prestige",
+      "description": "Restore SPI when you take credit for the deeds of another."
+    },
+    "flavor": {
+      "name": "Rations from home",
+      "flavor1": {
+        "name": "Flavour",
+        "code": "flavour",
+        "data": [
+          { "from": 1, "to": 1, "text": "Sour" },
+          { "from": 2, "to": 2, "text": "Salty" },
+          { "from": 3, "to": 3, "text": "Fiery" },
+          { "from": 4, "to": 4, "text": "Smoked" },
+          { "from": 5, "to": 5, "text": "Burnt" },
+          { "from": 6, "to": 6, "text": "Chewy" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Substance",
+        "code": "substance",
+        "data": [
+          { "from": 1, "to": 1, "text": "Skin" },
+          { "from": 2, "to": 2, "text": "Beans" },
+          { "from": 3, "to": 3, "text": "Insects" },
+          { "from": 4, "to": 4, "text": "Roots" },
+          { "from": 5, "to": 5, "text": "Cheese" },
+          { "from": 6, "to": 6, "text": "Honey" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Beastly steed",
+      "guard": 3,
+      "clarity": 7,
+      "spirit": 5,
+      "vigour": 15,
+      "trample": "d6"
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Blunt sword",
+        "type": "weapon",
+        "damage": "d8",
+        "hefty": true,
+        "long": false,
+        "slow": false
+      },
+      { "name": "Ringed mail", "type": "coat", "armor": 1 },
+      {
+        "name": "Rations from home",
+        "type": "misc",
+        "description": "See below"
+      }
+    ]
+  },
+  {
+    "type": "The Emerald Knight",
+    "description": "A verdant cloak on sable steed. Neath nature’s veil, yond sight and heed",
+    "ability": {
+      "name": "Fade to Green",
+      "description": "Use when hiding still and silent in greenery. You cannot be found by any means. While hiding you can only perform a specific type of action without revealing yourself, but also benefit from a heightened sense (see below)."
+    },
+    "passion": {
+      "name": "Elegance",
+      "description": "Restore SPI when you leave a place more beautiful than you found it."
+    },
+    "flavor": {
+      "name": "Hidden action",
+      "flavor1": {
+        "name": "Hidden Action",
+        "code": "hidden_action",
+        "data": [
+          { "from": 1, "to": 1, "text": "Strike a wounded enemy" },
+          { "from": 2, "to": 2, "text": "Make animal calls" },
+          { "from": 3, "to": 3, "text": "Throw stones" },
+          { "from": 4, "to": 4, "text": "Grab a non-alert enemy" },
+          { "from": 5, "to": 5, "text": "Move slowly" },
+          { "from": 6, "to": 6, "text": "Whisper to allies" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Heightened Sense",
+        "code": "heightened_sense",
+        "data": [
+          { "from": 1, "to": 1, "text": "Vision (detail)" },
+          { "from": 2, "to": 2, "text": "Vision (distance)" },
+          { "from": 3, "to": 3, "text": "Hearing" },
+          { "from": 4, "to": 4, "text": "Smell" },
+          { "from": 5, "to": 5, "text": "Weather prediction" },
+          { "from": 6, "to": 6, "text": "Emotional insight" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Sable steed",
+      "guard": 4,
+      "clarity": 14,
+      "spirit": 5,
+      "vigour": 10
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Branchspear",
+        "type": "weapon",
+        "description": "When stabbed into a tree it is immovable by anyone but you",
+        "damage": "d8",
+        "hefty": true,
+        "long": false,
+        "slow": false
+      },
+      {
+        "name": "Cloaked mail",
+        "type": "coat",
+        "description": "A1 in verdant environments only"
+      },
+      { "name": "Shield", "type": "shield", "armor": 1, "damage": "d4" }
+    ]
+  },
+  {
+    "type": "The Chain Knight",
+    "description": "Born below the soil, below the stone, below all thought. Down, down, further down, of blood and iron wrought",
+    "ability": {
+      "name": "Will of the Irons",
+      "description": "Move a single chain that you touch as if it was a limb. You can lash out with both ends (d6 each), grasp opponents, and otherwise move it to your will."
+    },
+    "passion": {
+      "name": "Abyss",
+      "description": "Restore SPI when sleeping underground in complete darkness"
+    },
+    "flavor": {
+      "name": "How you reached the surface",
+      "flavor1": {
+        "name": "First",
+        "code": "first",
+        "data": [
+          { "from": 1, "to": 1, "text": "Through darkness" },
+          { "from": 2, "to": 2, "text": "Through smoke" },
+          { "from": 3, "to": 3, "text": "Out of a cell" },
+          { "from": 4, "to": 4, "text": "Climbing chains" },
+          { "from": 5, "to": 5, "text": "Up the great stair" },
+          { "from": 6, "to": 6, "text": "Through fire" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Then",
+        "code": "then",
+        "data": [
+          { "from": 1, "to": 1, "text": "Through ice" },
+          { "from": 2, "to": 2, "text": "Through dirt" },
+          { "from": 3, "to": 3, "text": "Out of a mountain" },
+          { "from": 4, "to": 4, "text": "Out of a tomb" },
+          { "from": 5, "to": 5, "text": "Up from a well" },
+          { "from": 6, "to": 6, "text": "Out of a lake" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Tired steed",
+      "guard": 3,
+      "clarity": 12,
+      "spirit": 3,
+      "vigour": 10
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Pronged mace",
+        "type": "weapon",
+        "damage": "d8",
+        "hefty": true,
+        "long": false,
+        "slow": false
+      },
+      {
+        "name": "Oubliette mail",
+        "type": "coat",
+        "description": "Wrapped in a Long iron chain",
+        "armor": 1
+      }
+    ]
+  },
+  {
+    "type": "The Banner Knight",
+    "description": "Beware of those festooning the flag. Their blade may be idle but their comrades are sharpened",
+    "ability": {
+      "name": "Rousing Presence",
+      "description": "Use once per Attack when you are part of a group Attack. You may reroll the entire pool of Attack dice once only."
+    },
+    "passion": {
+      "name": "Sensitivity",
+      "description": "Restore SPI when receiving social approval."
+    },
+    "flavor": {
+      "name": "Inspiring banner",
+      "flavor1": {
+        "name": "Design",
+        "code": "design",
+        "data": [
+          { "from": 1, "to": 1, "text": "Red/white diamonds" },
+          { "from": 2, "to": 2, "text": "Blue/yellow rings" },
+          { "from": 3, "to": 3, "text": "Green/silver spiral" },
+          { "from": 4, "to": 4, "text": "Purple/gold chevrons" },
+          { "from": 5, "to": 5, "text": "Black/blue bars" },
+          { "from": 6, "to": 6, "text": "Orange/black waves" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Topper",
+        "code": "topper",
+        "data": [
+          { "from": 1, "to": 1, "text": "Antlers" },
+          { "from": 2, "to": 2, "text": "Jaws" },
+          { "from": 3, "to": 3, "text": "Tree" },
+          { "from": 4, "to": 4, "text": "Fishtail" },
+          { "from": 5, "to": 5, "text": "Wings" },
+          { "from": 6, "to": 6, "text": "Seashel" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Fat steed",
+      "guard": 3,
+      "clarity": 8,
+      "spirit": 5,
+      "vigour": 10,
+      "trample": "d6"
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Banner-pike",
+        "type": "weapon",
+        "description": "See below, lose d6 SPI if the banner ever falls to the ground in battle",
+        "damage": "d10",
+        "hefty": false,
+        "long": true,
+        "slow": false
+      },
+      {
+        "name": "Spikehammer",
+        "type": "weapon",
+        "damage": "d6",
+        "hefty": false,
+        "long": false,
+        "slow": false
+      },
+      { "name": "Ornate mail .", "type": "coat", "armor": 1 }
+    ]
+  },
+  {
+    "type": "The Pigeon Knight",
+    "description": "The humble know no home in place. For such wanderers, the horizon is their hearth",
+    "ability": {
+      "name": "Wayfinder Sense",
+      "description": "Sense the direction in which a particular goal lies, but not the best route to travel there. You cannot use this to find your lost home or the City."
+    },
+    "passion": {
+      "name": "Inquisition",
+      "description": "Restore SPI when you wrangle the truth out of an uncooperative person."
+    },
+    "flavor": {
+      "name": "Memories of the lost home",
+      "flavor1": {
+        "name": "Hue",
+        "code": "hue",
+        "data": [
+          { "from": 1, "to": 1, "text": "Emerald" },
+          { "from": 2, "to": 2, "text": "Marble" },
+          { "from": 3, "to": 3, "text": "Silver" },
+          { "from": 4, "to": 4, "text": "Golden" },
+          { "from": 5, "to": 5, "text": "Ruby" },
+          { "from": 6, "to": 6, "text": "Violet" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Shape",
+        "code": "shape",
+        "data": [
+          { "from": 1, "to": 1, "text": "Towers" },
+          { "from": 2, "to": 2, "text": "Walls" },
+          { "from": 3, "to": 3, "text": "Flowers" },
+          { "from": 4, "to": 4, "text": "Ships" },
+          { "from": 5, "to": 5, "text": "Water" },
+          { "from": 6, "to": 6, "text": "Clouds" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Grey steed",
+      "biography": "Unmatched over long distance",
+      "guard": 2,
+      "clarity": 8,
+      "spirit": 5,
+      "vigour": 7
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Bitterglaive",
+        "type": "weapon",
+        "description": "+d8 vs targets within their home",
+        "damage": "d10",
+        "hefty": false,
+        "long": true,
+        "slow": false
+      },
+      {
+        "name": "Patchwork mail with hooded cloak",
+        "type": "coat",
+        "description": "Can be used to vanish into a significantly large crowd",
+        "armor": 1
+      }
+    ]
+  },
+  {
+    "type": "The Shield Knight",
+    "description": "In wood, hide, or iron, as armour meek or grand. No greater shield for the weak than the oath-sworn Knight’s own hand",
+    "ability": {
+      "name": "Death Ward",
+      "description": "Use when a nearby ally would take a Mortal Wound or be killed outright. You take a Mortal Wound instead."
+    },
+    "passion": {
+      "name": "Mortality",
+      "description": "Restore SPI when you see an ally suffer a Mortal Wound."
+    },
+    "flavor": {
+      "name": "Soothing salve",
+      "flavor1": {
+        "name": "Aroma",
+        "code": "aroma",
+        "data": [
+          { "from": 1, "to": 1, "text": "Rosemary" },
+          { "from": 2, "to": 2, "text": "Mould" },
+          { "from": 3, "to": 3, "text": "Pepper" },
+          { "from": 4, "to": 4, "text": "Copper" },
+          { "from": 5, "to": 5, "text": "Garlic" },
+          { "from": 6, "to": 6, "text": "Meat" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Side Effect",
+        "code": "side_effect",
+        "data": [
+          { "from": 1, "to": 1, "text": "Hallucination" },
+          { "from": 2, "to": 2, "text": "Lethargy" },
+          { "from": 3, "to": 3, "text": "Stimulation" },
+          { "from": 4, "to": 4, "text": "Sorrow" },
+          { "from": 5, "to": 5, "text": "Giddiness" },
+          { "from": 6, "to": 6, "text": "Absent-mindedness" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Untested steed",
+      "guard": 2,
+      "clarity": 8,
+      "spirit": 4,
+      "vigour": 12
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Dull sword",
+        "type": "weapon",
+        "damage": "2d6",
+        "hefty": true,
+        "long": false,
+        "slow": false
+      },
+      { "name": "Tattered gambeson", "type": "coat", "armor": 1 },
+      {
+        "name": "Cracked shield",
+        "type": "shield",
+        "armor": 1,
+        "damage": "d4"
+      },
+      {
+        "name": "Soothing salve",
+        "type": "misc",
+        "description": "You prepare enough for one use each day, restores VIG, see below"
+      }
+    ]
+  },
+  {
+    "type": "The Whip Knight",
+    "description": "Some draw screams from wrent flesh and bone. Others have ways to make very soul moan",
+    "ability": {
+      "name": "Pain Strike",
+      "description": "Make a melee Attack on your own. Damage is applied to GD as normal, but then to SPI in place of VIG. If the target loses half of their SPI from this Attack they lie broken before you."
+    },
+    "passion": {
+      "name": "Reverence",
+      "description": "Restore SPI when offering respectful homage to the dead."
+    },
+    "flavor": {
+      "name": "Strange herbs",
+      "flavor1": {
+        "name": "Positive Effect",
+        "code": "positive_effect",
+        "data": [
+          { "from": 1, "to": 1, "text": "Heightened hearing" },
+          { "from": 2, "to": 2, "text": "Breathe fire once(d8 blast)" },
+          { "from": 3, "to": 3, "text": "Speak remotely with any one person" },
+          { "from": 4, "to": 4, "text": "No pain (A1)" },
+          { "from": 5, "to": 5, "text": "Restore one Virtue" },
+          { "from": 6, "to": 6, "text": "Restore all Virtues" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Side Effect",
+        "code": "side_effect",
+        "data": [
+          { "from": 1, "to": 1, "text": "Mild nausea" },
+          { "from": 2, "to": 2, "text": "Unable to speak" },
+          { "from": 3, "to": 3, "text": "Hazy vision" },
+          { "from": 4, "to": 4, "text": "Lose d6 VIG" },
+          { "from": 5, "to": 5, "text": "Lose d6 CLA" },
+          { "from": 6, "to": 6, "text": "Lose d6 SPI" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Pampered steed",
+      "guard": 2,
+      "clarity": 8,
+      "spirit": 5,
+      "vigour": 10
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Spiny mace",
+        "type": "weapon",
+        "damage": "d8",
+        "hefty": true,
+        "long": false,
+        "slow": false
+      },
+      {
+        "name": "Whip",
+        "type": "weapon",
+        "damage": "d6",
+        "hefty": false,
+        "long": false,
+        "slow": false
+      },
+      {
+        "name": "Strange herbs",
+        "type": "misc",
+        "description": "Different effect each time, see below. Enough for one dose each day. Effects wear off after an hour, but Virtue Loss remains"
+      }
+    ]
+  },
+  {
+    "type": "The Seal Knight",
+    "description": "A Knight’s sworn oath outlasts the stone wall. Yet Seers say in time even words must fall",
+    "ability": {
+      "name": "Knight to mark it with your seal.",
+      "description": "They can use Deny as if they were a Knight, but then the seal is removed."
+    },
+    "passion": {
+      "name": "Modesty",
+      "description": "Restore SPI when refusing a reward"
+    },
+    "flavor": {
+      "name": "Runic scrolls",
+      "flavor1": {
+        "name": "Subject",
+        "code": "subject",
+        "data": [
+          { "from": 1, "to": 1, "text": "The Seer reading" },
+          { "from": 2, "to": 2, "text": "The Seal Knight" },
+          { "from": 3, "to": 3, "text": "Another Knight" },
+          { "from": 4, "to": 4, "text": "Another Seer" },
+          { "from": 5, "to": 5, "text": "A Myth" },
+          { "from": 6, "to": 6, "text": "The whole" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Prophecy",
+        "code": "prophecy",
+        "data": [
+          { "from": 1, "to": 1, "text": "Death" },
+          { "from": 2, "to": 2, "text": "Torment" },
+          { "from": 3, "to": 3, "text": "Rebirth" },
+          { "from": 4, "to": 4, "text": "Treachery" },
+          { "from": 5, "to": 5, "text": "Growth" },
+          { "from": 6, "to": 6, "text": "Realm Glory" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Dusty steed  ABILITY - Seal of Binding Strike a shield or armour being to a non",
+      "guard": 4,
+      "clarity": 8,
+      "spirit": 5,
+      "vigour": 10
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Stout halberd",
+        "type": "weapon",
+        "damage": "d10",
+        "hefty": false,
+        "long": true,
+        "slow": false
+      },
+      { "name": "Gambeson", "type": "coat", "armor": 1 },
+      {
+        "name": "Siege plate",
+        "type": "plate",
+        "description": "When the wearer braces against a door it cannot be breached",
+        "armor": 1
+      },
+      {
+        "name": "3 runic scrolls",
+        "type": "misc",
+        "description": "See below, can only be read by Seers, who value them greatly"
+      }
+    ]
+  },
+  {
+    "type": "The Horn Knight",
+    "description": "Horn cried, hearts asank, blood awoke. In its wail our fates all sealed as the feast for death",
+    "ability": {
+      "name": "Carnage Fanfare",
+      "description": "Blow the wild horn in battle. For the rest of this battle any VIG lost through Damage is doubled. This affects all involved in the battle, whether they hear the horn or not."
+    },
+    "passion": {
+      "name": "Bluntness",
+      "description": "Restore SPI when you move the conversation in a way that somebody is avoiding."
+    },
+    "flavor": {
+      "name": "The wild horn",
+      "flavor1": {
+        "name": "Shape",
+        "code": "shape",
+        "data": [
+          { "from": 1, "to": 1, "text": "Sharp" },
+          { "from": 2, "to": 2, "text": "Helix" },
+          { "from": 3, "to": 3, "text": "Sickle" },
+          { "from": 4, "to": 4, "text": "Intertwined" },
+          { "from": 5, "to": 5, "text": "Coiling" },
+          { "from": 6, "to": 6, "text": "Swollen" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Sound",
+        "code": "sound",
+        "data": [
+          { "from": 1, "to": 1, "text": "Dissonant" },
+          { "from": 2, "to": 2, "text": "Solemn" },
+          { "from": 3, "to": 3, "text": "Ghostly" },
+          { "from": 4, "to": 4, "text": "Beastly" },
+          { "from": 5, "to": 5, "text": "Droning" },
+          { "from": 6, "to": 6, "text": "Gravelly" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Rusty warhorse",
+      "guard": 2,
+      "clarity": 6,
+      "spirit": 5,
+      "vigour": 13,
+      "trample": "d6"
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Antler-halberd",
+        "type": "weapon",
+        "description": "+d10 vs horned or antlered opponents",
+        "damage": "d8",
+        "hefty": false,
+        "long": true,
+        "slow": false
+      },
+      {
+        "name": "Bow",
+        "type": "weapon",
+        "damage": "d6",
+        "hefty": false,
+        "long": true,
+        "slow": false
+      },
+      { "name": "Wild horn", "type": "misc", "description": "See below" }
+    ]
+  },
+  {
+    "type": "The Dove Knight",
+    "description": "In serenous moon the best of us can rest in docile light. That quietest bird in impure times must soar in bloody flight",
+    "ability": {
+      "name": "Strike of Serenity",
+      "description": "Make a melee Attack against a wounded target. Get +d8 to the Attack. If this defeats the target then all allies restore SPI."
+    },
+    "passion": {
+      "name": "Vengeance",
+      "description": "Restore SPI when achieving a worthy revenge"
+    },
+    "flavor": {
+      "name": "Winged armour",
+      "flavor1": {
+        "name": "Ability",
+        "code": "ability",
+        "data": [
+          { "from": 1, "to": 1, "text": "Always land safely" },
+          { "from": 2, "to": 2, "text": "Jump twice as high" },
+          { "from": 3, "to": 3, "text": "Sprint silently" },
+          { "from": 4, "to": 4, "text": "Animals won’t attack you unprovoked" },
+          {
+            "from": 5,
+            "to": 5,
+            "text": "Knights who strike the first blow against you lose d6 SPI"
+          },
+          { "from": 6, "to": 6, "text": "Appear as real wings" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Limitation",
+        "code": "limitation",
+        "data": [
+          { "from": 1, "to": 1, "text": "Sink like a stone" },
+          { "from": 2, "to": 2, "text": "Red glow when angry" },
+          { "from": 3, "to": 3, "text": "Slow running speed" },
+          {
+            "from": 4,
+            "to": 4,
+            "text": "Horses other than your own are afraid of you"
+          },
+          {
+            "from": 5,
+            "to": 5,
+            "text": "Lose d6 SPI if you ever strike the first blow to a Knight"
+          },
+          { "from": 6, "to": 6, "text": "Only protects under daylight" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Mountain steed",
+      "biography": "Sure-footed on rocky ground",
+      "guard": 2,
+      "clarity": 5,
+      "spirit": 5,
+      "vigour": 14
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Stout blade",
+        "type": "weapon",
+        "damage": "2d6",
+        "hefty": true,
+        "long": false,
+        "slow": false
+      },
+      { "name": "Gambeson ,", "type": "coat", "armor": 1 },
+      {
+        "name": "Winged scale",
+        "type": "plate",
+        "description": "Can’t fly, but see below",
+        "armor": 1
+      },
+      {
+        "name": "Bright weeds",
+        "type": "misc",
+        "description": "Create a cool glow when crushed to a powder"
+      }
+    ]
+  },
+  {
+    "type": "The Story Knight",
+    "description": "At last, I’m here!. The one you were waiting for, the one behind the words",
+    "ability": {
+      "name": "Weaver of Fate",
+      "description": "Just before night falls, tell a story related to a nearby place, noting two details past, present, or future. The Referee secretly chooses one of them to become truth. This can only be performed once per location."
+    },
+    "passion": {
+      "name": "Showmanship",
+      "description": "Restore SPI when you deliberately draw unwanted attention."
+    },
+    "flavor": {
+      "name": "Tome of tales",
+      "flavor1": {
+        "name": "Style",
+        "code": "style",
+        "data": [
+          { "from": 1, "to": 1, "text": "Quest" },
+          { "from": 2, "to": 2, "text": "Romance" },
+          { "from": 3, "to": 3, "text": "Revenge" },
+          { "from": 4, "to": 4, "text": "Farce" },
+          { "from": 5, "to": 5, "text": "Nonsense" },
+          { "from": 6, "to": 6, "text": "Tragedy" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Twist",
+        "code": "twist",
+        "data": [
+          { "from": 1, "to": 1, "text": "Ghosts!" },
+          { "from": 2, "to": 2, "text": "Long-lost twins!" },
+          { "from": 3, "to": 3, "text": "Memory loss!" },
+          { "from": 4, "to": 4, "text": "Reincarnation!" },
+          { "from": 5, "to": 5, "text": "Talking animals!" },
+          { "from": 6, "to": 6, "text": "Everybody dies!" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Sinister steed",
+      "guard": 3,
+      "clarity": 14,
+      "spirit": 5,
+      "vigour": 10
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Crook-blade",
+        "type": "weapon",
+        "damage": "d10",
+        "hefty": false,
+        "long": true,
+        "slow": false
+      },
+      { "name": "Mail", "type": "coat", "armor": 1 },
+      { "name": "Bronzestudded brigandine", "type": "plate", "armor": 1 },
+      {
+        "name": "Book of stories",
+        "type": "misc",
+        "description": "Something for everyone, see below for a random tale"
+      }
+    ]
+  },
+  {
+    "type": "The Turtle Knight",
+    "description": "I stand inclad in shelldy stead. Nawone of you will see me dead!",
+    "ability": {
+      "name": "Unbreakable Shell",
+      "description": "Use at the start of your turn. You cannot move, but double the Armour score of your shield and gain +d6 when attacking with a shield."
+    },
+    "passion": {
+      "name": "Wellrestedness",
+      "description": "Restore SPI when you sleep for two consecutive Phases."
+    },
+    "flavor": {
+      "name": "Drinking horn",
+      "flavor1": {
+        "name": "Appearance",
+        "code": "appearance",
+        "data": [
+          { "from": 1, "to": 1, "text": "Tiny" },
+          { "from": 2, "to": 2, "text": "Runic carvings" },
+          { "from": 3, "to": 3, "text": "Ruby encrusted" },
+          { "from": 4, "to": 4, "text": "Volcanic rock" },
+          { "from": 5, "to": 5, "text": "Painted battle scene" },
+          { "from": 6, "to": 6, "text": "Huge" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Imparted Flavour",
+        "code": "imparted_flavour",
+        "data": [
+          { "from": 1, "to": 1, "text": "Floral honey" },
+          { "from": 2, "to": 2, "text": "Smoky salt" },
+          { "from": 3, "to": 3, "text": "Toasty almond" },
+          { "from": 4, "to": 4, "text": "Ice water" },
+          { "from": 5, "to": 5, "text": "Warm berries" },
+          { "from": 6, "to": 6, "text": "Meat dripping" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Squat steed",
+      "guard": 2,
+      "clarity": 5,
+      "spirit": 6,
+      "vigour": 14
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Beakhammer",
+        "type": "weapon",
+        "damage": "d6",
+        "hefty": false,
+        "long": false,
+        "slow": false
+      },
+      {
+        "name": "Battered tower shield",
+        "type": "shield",
+        "armor": 1,
+        "damage": "d4"
+      },
+      {
+        "name": "Drinking horn",
+        "type": "misc",
+        "description": "Makes even disgusting liquids taste good, see below"
+      }
+    ]
+  },
+  {
+    "type": "The Key Knight",
+    "description": "Sure as sky and sea. For every lock a key",
+    "ability": {
+      "name": "Retroactive Forethought",
+      "description": "Once per day, produce a common item from your backpack that you could have reasonably acquired at a recent point."
+    },
+    "passion": {
+      "name": "Distraction",
+      "description": "Restore SPI when you abandon a set plan."
+    },
+    "flavor": {
+      "name": "Ill gotten gains",
+      "flavor1": {
+        "name": "Valuables",
+        "code": "valuables",
+        "data": [
+          { "from": 1, "to": 1, "text": "Polished gems" },
+          { "from": 2, "to": 2, "text": "Silver coins" },
+          { "from": 3, "to": 3, "text": "Box of salt" },
+          { "from": 4, "to": 4, "text": "Tiny, perfect diamond" },
+          { "from": 5, "to": 5, "text": "Golden hairpin" },
+          { "from": 6, "to": 6, "text": "Wooden figurine" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Keepsakes",
+        "code": "keepsakes",
+        "data": [
+          { "from": 1, "to": 1, "text": "A scrap of a poem" },
+          { "from": 2, "to": 2, "text": "A lock of hair" },
+          { "from": 3, "to": 3, "text": "A wooden ring" },
+          { "from": 4, "to": 4, "text": "Some baby teeth" },
+          { "from": 5, "to": 5, "text": "A vial of blood" },
+          { "from": 6, "to": 6, "text": "Wooden figurine" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Jittery steed",
+      "guard": 3,
+      "clarity": 10,
+      "spirit": 3,
+      "vigour": 12
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Horned axe",
+        "type": "weapon",
+        "damage": "d8",
+        "hefty": true,
+        "long": false,
+        "slow": false
+      },
+      { "name": "Kite shield", "type": "shield", "armor": 1, "damage": "d4" },
+      {
+        "name": "Ring of keys",
+        "type": "misc",
+        "description": "For any lock there’s a 1-in-3 chance you can find a key that fits"
+      },
+      {
+        "name": "Bag of ill-gotten gains",
+        "type": "misc",
+        "description": "See below"
+      }
+    ]
+  },
+  {
+    "type": "The Moat Knight",
+    "description": "There they stood, awashed in soddled loam. A grottling dance, the dusky sky agloam",
+    "ability": {
+      "name": "Wading Stance",
+      "description": "Gain 1 Armour and +d6 to all attacks when fighting in at least waist-high water."
+    },
+    "passion": {
+      "name": "Filth",
+      "description": "Restore SPI when you become utterly filthy."
+    },
+    "flavor": {
+      "name": "An especially difficult steed",
+      "flavor1": {
+        "name": "Will Not",
+        "code": "will_not",
+        "data": [
+          { "from": 1, "to": 1, "text": "Jump" },
+          { "from": 2, "to": 2, "text": "Stop suddenly" },
+          { "from": 3, "to": 3, "text": "Carry anybody but their Knight" },
+          {
+            "from": 4,
+            "to": 4,
+            "text": "Follow instructions unless being ridden"
+          },
+          { "from": 5, "to": 5, "text": "Pull a cart" },
+          { "from": 6, "to": 6, "text": "Travel in darkness" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "But",
+        "code": "but",
+        "data": [
+          { "from": 1, "to": 1, "text": "Eats anything" },
+          { "from": 2, "to": 2, "text": "Is beautiful" },
+          { "from": 3, "to": 3, "text": "Always hears an ambush coming" },
+          { "from": 4, "to": 4, "text": "Always knows which way is north" },
+          { "from": 5, "to": 5, "text": "Hums tunefully" },
+          { "from": 6, "to": 6, "text": "Is very tough (A1)" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Difficult steed",
+      "biography": "See below",
+      "guard": 2,
+      "clarity": 6,
+      "spirit": 6,
+      "vigour": 12
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Spiked flail",
+        "type": "weapon",
+        "damage": "d10",
+        "hefty": false,
+        "long": true,
+        "slow": false
+      },
+      {
+        "name": "Barbed mail",
+        "type": "coat",
+        "description": "Anyone trying to grab or hold you takes d6 Damage",
+        "armor": 1
+      },
+      {
+        "name": "Moat shovel",
+        "type": "misc",
+        "description": "Any hole dug with this immediately begins to fill with water, stopping when full"
+      }
+    ]
+  },
+  {
+    "type": "The Boulder Knight",
+    "description": "A fated charge in mail and stalward plate. Abaited foes await that thundring gait",
+    "ability": {
+      "name": "Unstoppable Dash",
+      "description": "When you are in motion you cannot be stopped, but sustain d12 Damage if breaking through a solid wall or object. You cannot sustain this motion for long distances."
+    },
+    "passion": {
+      "name": "Strength",
+      "description": "Restore SPI when you complete a physical task that somebody else was struggling with."
+    },
+    "flavor": {
+      "name": "Fancy armour",
+      "flavor1": {
+        "name": "Design",
+        "code": "design",
+        "data": [
+          { "from": 1, "to": 1, "text": "Bronze plates" },
+          { "from": 2, "to": 2, "text": "Flanged iron" },
+          { "from": 3, "to": 3, "text": "Sharp scales" },
+          { "from": 4, "to": 4, "text": "Bright brigandine" },
+          { "from": 5, "to": 5, "text": "Heavy rings" },
+          { "from": 6, "to": 6, "text": "Sleek brass" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Quirk",
+        "code": "quirk",
+        "data": [
+          { "from": 1, "to": 1, "text": "Floats in water" },
+          { "from": 2, "to": 2, "text": "Quick to don or remove" },
+          { "from": 3, "to": 3, "text": "Silent when moving" },
+          { "from": 4, "to": 4, "text": "Intimidating helm (A1)" },
+          { "from": 5, "to": 5, "text": "Spiked gauntlets (d6)" },
+          { "from": 6, "to": 6, "text": "Ignore fall Damage" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Well-fed steed",
+      "guard": 3,
+      "clarity": 8,
+      "spirit": 6,
+      "vigour": 14
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Siege hammer",
+        "type": "weapon",
+        "damage": "d10",
+        "hefty": false,
+        "long": true,
+        "slow": false
+      },
+      { "name": "Mail", "type": "coat", "armor": 1 },
+      {
+        "name": "Fancy plate",
+        "type": "plate",
+        "description": "See below",
+        "armor": 1
+      },
+      {
+        "name": "Hand-written book",
+        "type": "misc",
+        "description": "“Of Time-Tested Guidance in the Construction and Destruction of Fortresses, Ramparts, and Castles”"
+      }
+    ]
+  },
+  {
+    "type": "The Tankard Knight",
+    "description": "Abrash and bold, renowned and rued. Their presence cheered on one breath, damned anext",
+    "ability": {
+      "name": "Humble Glamourie",
+      "description": "After eating and drinking with somebody for a few hours they consider you trustworthy enough to speak openly about anything you ask about. The next day they come to their senses and realise if they revealed too much."
+    },
+    "passion": {
+      "name": "Revelry",
+      "description": "Restore SPI when socially overindulging."
+    },
+    "flavor": {
+      "name": "Scar story",
+      "flavor1": {
+        "name": "Who Scarred You?",
+        "code": "who_scarred_you",
+        "data": [
+          { "from": 1, "to": 1, "text": "Ruler of a nearby Holding" },
+          { "from": 2, "to": 2, "text": "Ruler of the Seat of Power" },
+          { "from": 3, "to": 3, "text": "Wandering Knight" },
+          { "from": 4, "to": 4, "text": "A whole village" },
+          { "from": 5, "to": 5, "text": "A ship’s captain" },
+          { "from": 6, "to": 6, "text": "A member of your Company" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Your Betrayal",
+        "code": "your_betrayal",
+        "data": [
+          { "from": 1, "to": 1, "text": "Disloyalty" },
+          { "from": 2, "to": 2, "text": "Petty theft " },
+          { "from": 3, "to": 3, "text": "A violent argument" },
+          { "from": 4, "to": 4, "text": "A broken promise" },
+          { "from": 5, "to": 5, "text": "Slander" },
+          { "from": 6, "to": 6, "text": "Neglect in a time of great need" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Aggressive charger",
+      "guard": 2,
+      "clarity": 5,
+      "spirit": 6,
+      "vigour": 14,
+      "trample": "d8"
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Eagle axe",
+        "type": "weapon",
+        "damage": "d8",
+        "hefty": true,
+        "long": false,
+        "slow": false
+      },
+      { "name": "Roundshield", "type": "shield", "armor": 1, "damage": "d4" },
+      { "name": "Mail shirt", "type": "coat", "armor": 1 },
+      {
+        "name": "Scar from a friend betrayed",
+        "type": "misc",
+        "description": "See below"
+      }
+    ]
+  },
+  {
+    "type": "The Owl Knight",
+    "description": "A fat one indeed who feasts on the fruits of fact. The nut of knowing nourishes from nog to nosh",
+    "ability": {
+      "name": "Arboreal Archive",
+      "description": "Spend a Phase running hands over a tree to access its memory, seeing anything that happened under its shade or over its roots."
+    },
+    "passion": {
+      "name": "Alertness",
+      "description": "Restore SPI when you spot an ambush, trap, or surprise attack."
+    },
+    "flavor": {
+      "name": "Miscellaneous tomes",
+      "flavor1": {
+        "name": "Title",
+        "code": "title",
+        "data": [
+          { "from": 1, "to": 1, "text": "The Light of…" },
+          { "from": 2, "to": 2, "text": "Those who long for…" },
+          { "from": 3, "to": 3, "text": "Death &…" },
+          { "from": 4, "to": 4, "text": "Merits of…" },
+          { "from": 5, "to": 5, "text": "Of Domain and…" },
+          { "from": 6, "to": 6, "text": "In the Garden of…" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Title",
+        "code": "title",
+        "data": [
+          { "from": 1, "to": 1, "text": "…the Sea Beasts" },
+          { "from": 2, "to": 2, "text": "…Bread" },
+          { "from": 3, "to": 3, "text": "…the City" },
+          { "from": 4, "to": 4, "text": "…other Meditations" },
+          { "from": 5, "to": 5, "text": "…Coin" },
+          { "from": 6, "to": 6, "text": "…Doom" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Peaceful steed",
+      "guard": 4,
+      "clarity": 10,
+      "spirit": 6,
+      "vigour": 10
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Blade-staff",
+        "type": "weapon",
+        "damage": "2d8",
+        "hefty": false,
+        "long": true,
+        "slow": false
+      },
+      { "name": "Ringmail", "type": "coat", "armor": 1 },
+      {
+        "name": "Sack of books",
+        "type": "misc",
+        "description": "1-in-2 chance you have a small snippet of information on any particular topic at hand, otherwise you find a miscellaneous tome, as below"
+      }
+    ]
+  },
+  {
+    "type": "The Hooded Knight",
+    "description": "As deeds abound in history's script. More slip from time’s forgetful grip",
+    "ability": {
+      "name": "Unnoticed Deed",
+      "description": "Once per day you can retroactively declare an action that you took earlier that day, such as giving instructions to an ally, or gathering a specific piece of information. This cannot be used to acquire new items."
+    },
+    "passion": {
+      "name": "Anonymity",
+      "description": "Restore SPI when somebody believes in a false identity you are portraying."
+    },
+    "flavor": {
+      "name": "Hood and cloak",
+      "flavor1": {
+        "name": "Hood",
+        "code": "hood",
+        "data": [
+          { "from": 1, "to": 1, "text": "Veiled" },
+          { "from": 2, "to": 2, "text": "Shadowy" },
+          { "from": 3, "to": 3, "text": "Silken" },
+          { "from": 4, "to": 4, "text": "Tattered" },
+          { "from": 5, "to": 5, "text": "Fur-trimmed" },
+          { "from": 6, "to": 6, "text": "Threadbare" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Cloak",
+        "code": "cloak",
+        "data": [
+          { "from": 1, "to": 1, "text": "Velvet" },
+          { "from": 2, "to": 2, "text": "Torn" },
+          { "from": 3, "to": 3, "text": "Weathered" },
+          { "from": 4, "to": 4, "text": "Layered" },
+          { "from": 5, "to": 5, "text": "Embroidered" },
+          { "from": 6, "to": 6, "text": "Faded pattern" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Modest steed",
+      "guard": 4,
+      "clarity": 9,
+      "spirit": 5,
+      "vigour": 10
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Glaive",
+        "type": "weapon",
+        "damage": "d10",
+        "hefty": false,
+        "long": true,
+        "slow": false
+      },
+      {
+        "name": "3 throwing axes",
+        "type": "weapon",
+        "damage": "d6",
+        "hefty": false,
+        "long": false,
+        "slow": false
+      },
+      {
+        "name": "Cloak and hood",
+        "type": "misc",
+        "description": "See below, while fully cloaked and hooded, people will see you in the moment, but have no memory of you once you pass from sight"
+      }
+    ]
+  },
+  {
+    "type": "The Lance Knight",
+    "description": "Steed agasp, spear agroan, strike agore. Sharp afrail, sight ablind, then no more",
+    "ability": {
+      "name": "Shattering Charge",
+      "description": "Once per day, make a solo mounted charging Attack with a lance. The Attack gains +d12, Blast, and Gambits caused by the Attack count as strong. The lance is shattered."
+    },
+    "passion": {
+      "name": "Adventure",
+      "description": "Restore SPI when you enter a Myth Hex."
+    },
+    "flavor": {
+      "name": "Mystic sight",
+      "flavor1": {
+        "name": "What can you see?",
+        "code": "what_can_you_see",
+        "data": [
+          { "from": 1, "to": 1, "text": "Fears" },
+          { "from": 2, "to": 2, "text": "Desires" },
+          { "from": 3, "to": 3, "text": "Hidden things" },
+          { "from": 4, "to": 4, "text": "Regrets" },
+          { "from": 5, "to": 5, "text": "Loyalties" },
+          { "from": 6, "to": 6, "text": "Injuries and disease" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "But you cannot see",
+        "code": "but_you_cannot_see",
+        "data": [
+          { "from": 1, "to": 1, "text": "Colour" },
+          { "from": 2, "to": 2, "text": "Writing" },
+          { "from": 3, "to": 3, "text": "Birds" },
+          { "from": 4, "to": 4, "text": "Water" },
+          { "from": 5, "to": 5, "text": "Stars and sun" },
+          { "from": 6, "to": 6, "text": "Silver and gold" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Weary charger",
+      "guard": 3,
+      "clarity": 6,
+      "spirit": 4,
+      "vigour": 14,
+      "trample": "d6"
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Lance",
+        "type": "weapon",
+        "description": "Hefty if mounted",
+        "damage": "d10",
+        "hefty": true,
+        "long": true,
+        "slow": false
+      },
+      {
+        "name": "Spiked mace",
+        "type": "weapon",
+        "damage": "d8",
+        "hefty": true,
+        "long": false,
+        "slow": false
+      },
+      { "name": "Kite shield", "type": "shield", "armor": 1, "damage": "d4" },
+      {
+        "name": "Mystic sight",
+        "type": "misc",
+        "description": "You can see something you shouldn't be able to, see below"
+      }
+    ]
+  },
+  {
+    "type": "The Questing Knight",
+    "description": "Dream of the commoner, tragedy of the knight. To die at rest, at peace, at quiet",
+    "ability": {
+      "name": "Pledge Quest",
+      "description": "Swear a quest to somebody who cares. Until you complete the quest you cannot regain lost GD, but get +d12 on all attacks against those who stand in your way. Lose d12 SPI if you abandon the quest."
+    },
+    "passion": {
+      "name": "Impetuosity",
+      "description": "Restore SPI when you are first to fight."
+    },
+    "flavor": {
+      "name": "Ancient sword",
+      "flavor1": {
+        "name": "Appearance",
+        "code": "appearance",
+        "data": [
+          { "from": 1, "to": 1, "text": "Massive (d10 long)" },
+          { "from": 2, "to": 2, "text": "Curved (d8)" },
+          { "from": 3, "to": 3, "text": "Jagged (2d6 hefty)" },
+          { "from": 4, "to": 4, "text": "Hooked (2d8 long)" },
+          { "from": 5, "to": 5, "text": "Shining (2d6)" },
+          { "from": 6, "to": 6, "text": "Cruel (2d8 hefty)" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Who gave it to you?",
+        "code": "who_gave_it_to_you",
+        "data": [
+          { "from": 1, "to": 1, "text": "The tide" },
+          { "from": 2, "to": 2, "text": "A tomb" },
+          { "from": 3, "to": 3, "text": "A tree" },
+          { "from": 4, "to": 4, "text": "An eagle" },
+          { "from": 5, "to": 5, "text": "A hermit" },
+          { "from": 6, "to": 6, "text": "A mountain" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Reckless charger",
+      "guard": 1,
+      "clarity": 6,
+      "spirit": 6,
+      "vigour": 14,
+      "trample": "d8"
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Ancient sword",
+        "type": "weapon",
+        "description": "See below",
+        "hefty": false,
+        "long": false,
+        "slow": false
+      },
+      { "name": "Kite shield", "type": "shield", "armor": 1, "damage": "d4" },
+      {
+        "name": "3 javelins",
+        "type": "weapon",
+        "damage": "d6",
+        "hefty": false,
+        "long": false,
+        "slow": false
+      },
+      {
+        "name": "Cold stone",
+        "type": "misc",
+        "description": "Can absorb a single ailment from the wielder before vanishing in a burning light"
+      }
+    ]
+  },
+  {
+    "type": "The Ring Knight",
+    "description": "With ring a’lone, head dreams of home. With rings o’two, heart fills with rue",
+    "ability": {
+      "name": "Unbreakable Circle",
+      "description": "Draw a circle in the ground, with yourself in the centre. Until you leave the circle, no other living being can enter or leave it."
+    },
+    "passion": {
+      "name": "Respectfulness",
+      "description": "Restore SPI when returning something to its rightful owner after it was lost or taken."
+    },
+    "flavor": {
+      "name": "Properties of the rings",
+      "flavor1": {
+        "name": "Design",
+        "code": "design",
+        "data": [
+          { "from": 1, "to": 1, "text": "Snakes" },
+          { "from": 2, "to": 2, "text": "Skulls" },
+          { "from": 3, "to": 3, "text": "Thorns" },
+          { "from": 4, "to": 4, "text": "Rubies" },
+          { "from": 5, "to": 5, "text": "Gold" },
+          { "from": 6, "to": 6, "text": "Birds" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Effect",
+        "code": "effect",
+        "data": [
+          { "from": 1, "to": 1, "text": "Wearers share vision" },
+          { "from": 2, "to": 2, "text": "Wearers share hearing" },
+          { "from": 3, "to": 3, "text": "Wearers share GD (use total)" },
+          { "from": 4, "to": 4, "text": "Wearers share VIG (use higher)" },
+          { "from": 5, "to": 5, "text": "Wearers share CLA (use higher)" },
+          { "from": 6, "to": 6, "text": "Wearers share SPI (use higher)" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Aloof steed",
+      "biography": "Leaves no trail",
+      "guard": 3,
+      "clarity": 8,
+      "spirit": 7,
+      "vigour": 11
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Long mace",
+        "type": "weapon",
+        "damage": "d10",
+        "hefty": false,
+        "long": true,
+        "slow": false
+      },
+      { "name": "Violet mail", "type": "coat", "armor": 1 },
+      {
+        "name": "Pair of rings",
+        "type": "misc",
+        "description": "See below, can only be put on or removed at sunrise"
+      }
+    ]
+  },
+  {
+    "type": "The Forge Knight",
+    "description": "Gravid beats on ferrous slab, thick air a crimson sheen. Each mallenstroke leaves scars aworn, apparent and unseen",
+    "ability": {
+      "name": "Tempering Strike",
+      "description": "When you cause a Wound with a melee weapon, that weapon receives +d6 until the end of combat. This effect can stack."
+    },
+    "passion": {
+      "name": "Burning",
+      "description": "Restore SPI when you are wounded by fire."
+    },
+    "flavor": {
+      "name": "Scars from the forge",
+      "flavor1": {
+        "name": "Visible",
+        "code": "visible",
+        "data": [
+          { "from": 1, "to": 1, "text": "Burnt hands" },
+          { "from": 2, "to": 2, "text": "Scorched hair" },
+          { "from": 3, "to": 3, "text": "Faded eyes" },
+          { "from": 4, "to": 4, "text": "Missing teeth" },
+          { "from": 5, "to": 5, "text": "Blistered face" },
+          { "from": 6, "to": 6, "text": "Branded arm" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Non-Visible",
+        "code": "non_visible",
+        "data": [
+          { "from": 1, "to": 1, "text": "Fiery nightmares" },
+          { "from": 2, "to": 2, "text": "Noise sensitivity" },
+          { "from": 3, "to": 3, "text": "Distrust of sky" },
+          { "from": 4, "to": 4, "text": "High pain threshold" },
+          { "from": 5, "to": 5, "text": "Light sensitivity" },
+          { "from": 6, "to": 6, "text": "Fear of water" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Helmed steed",
+      "biography": "A1",
+      "guard": 4,
+      "clarity": 4,
+      "spirit": 5,
+      "vigour": 14,
+      "trample": "d6"
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Bolt-guisarme",
+        "type": "weapon",
+        "description": "Long in melee or slow in ranged",
+        "damage": "d10",
+        "hefty": false,
+        "long": true,
+        "slow": true
+      },
+      { "name": "Gambeson", "type": "coat", "armor": 1 },
+      { "name": "Scale", "type": "plate", "armor": 1 },
+      {
+        "name": "Scars from the forge",
+        "type": "misc",
+        "description": "See below"
+      },
+      {
+        "name": "Pots of forge dust",
+        "type": "misc",
+        "description": "Spreads irritating gas in the area when broken, Impairing attacks from within. You can make more anywhere with a forge"
+      }
+    ]
+  },
+  {
+    "type": "The Rune Knight",
+    "description": "Under gleam of lumenlight, in skin or stone ascratch. Strands of faten path unveiled, a starry scrawl to match",
+    "ability": {
+      "name": "Destinous Sigil",
+      "description": "At sunset, etch a cosmic rune somewhere secret on your person. Choose a number. When a die rolls that number you may adjust it to any other value on that die. This can be performed a number of times equal to the chosen number. A different number is chosen next sunset."
+    },
+    "passion": {
+      "name": "Foresight",
+      "description": "Restore SPI when your prediction is proven to be correct."
+    },
+    "flavor": {
+      "name": "The crystal flask",
+      "flavor1": {
+        "name": "If Shaken",
+        "code": "if_shaken",
+        "data": [
+          { "from": 1, "to": 1, "text": "Warmth of a hearth" },
+          { "from": 2, "to": 2, "text": "Veil of darkness" },
+          { "from": 3, "to": 3, "text": "Gentle light" },
+          { "from": 4, "to": 4, "text": "Repels birds" },
+          { "from": 5, "to": 5, "text": "Soothes canines" },
+          { "from": 6, "to": 6, "text": "Eases pain" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "If Smashed",
+        "code": "if_smashed",
+        "data": [
+          { "from": 1, "to": 1, "text": "Sudden thunderstorm" },
+          { "from": 2, "to": 2, "text": "Summer arrives" },
+          { "from": 3, "to": 3, "text": "Night arrives" },
+          { "from": 4, "to": 4, "text": "Deafening scream" },
+          { "from": 5, "to": 5, "text": "Plague of locusts" },
+          { "from": 6, "to": 6, "text": "Freezes nearby water" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Muscular charger",
+      "guard": 3,
+      "clarity": 8,
+      "spirit": 5,
+      "vigour": 13,
+      "trample": "d8"
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Pillar of inscribed stone",
+        "type": "weapon",
+        "damage": "2d10",
+        "hefty": false,
+        "long": false,
+        "slow": true
+      },
+      { "name": "Gambeson", "type": "coat", "armor": 1 },
+      { "name": "Iron chestplate", "type": "plate", "armor": 1 },
+      {
+        "name": "Sealed crystal flask",
+        "type": "misc",
+        "description": "See below, roll once only, and you know the effect"
+      }
+    ]
+  },
+  {
+    "type": "The Gallows Knight",
+    "description": "In dregs of dawn the damnlings sway. For famine’s brood a gifted prey",
+    "ability": {
+      "name": "Carrion’s Call",
+      "description": "Speak with scavenger creatures, and summon them to you. They’re only helpful if you’re providing them with food."
+    },
+    "passion": {
+      "name": "Misery",
+      "description": "Restore SPI when you meet somebody new and complain to them about something."
+    },
+    "flavor": {
+      "name": "Salvaged armour",
+      "flavor1": {
+        "name": "Type",
+        "code": "type",
+        "data": [
+          { "from": 1, "to": 1, "text": "Copper mail (A1)" },
+          { "from": 2, "to": 2, "text": "Cracked chestplate and bracers (A1)" },
+          { "from": 3, "to": 3, "text": "Red brigandine (A1)" },
+          { "from": 4, "to": 4, "text": "Padded cloth (A1)" },
+          { "from": 5, "to": 5, "text": "Hardened leather (A1)" },
+          { "from": 6, "to": 6, "text": "Dented plate (A1)" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Detail",
+        "code": "detail",
+        "data": [
+          { "from": 1, "to": 1, "text": "Embedded arrowheads" },
+          { "from": 2, "to": 2, "text": "Two sets hastily patched together" },
+          { "from": 3, "to": 3, "text": "Partially burnt" },
+          { "from": 4, "to": 4, "text": "Claw marks" },
+          { "from": 5, "to": 5, "text": "Faded heraldry" },
+          { "from": 6, "to": 6, "text": "Dried blood" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Flea-bitten steed",
+      "guard": 3,
+      "clarity": 7,
+      "spirit": 4,
+      "vigour": 9
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Neck-catcher",
+        "type": "weapon",
+        "description": "Wounded targets are snared securely around the neck, provided they have one",
+        "damage": "d10",
+        "hefty": false,
+        "long": true,
+        "slow": false
+      },
+      { "name": "Salvaged armour", "type": "misc", "description": "See below" },
+      {
+        "name": "Titan beads",
+        "type": "misc",
+        "description": "3 polished stones. When thrown they transform into a huge boulder mid-air, striking for d10 blast"
+      }
+    ]
+  },
+  {
+    "type": "The Tome Knight",
+    "description": "A loom of wisdom spun at dawn. Laid to rest til coming morn",
+    "ability": {
+      "name": "Dawn Contemplation",
+      "description": "At sunrise each day, choose any area of knowledge. You can ask the Referee three questions within this area, which they answer honestly with yes, no, or maybe if uncertain."
+    },
+    "passion": {
+      "name": "Introversion",
+      "description": "Restore SPI when you refuse a formal social gathering, or leave early."
+    },
+    "flavor": {
+      "name": "Limits of memory",
+      "flavor1": {
+        "name": "Blind spot for…",
+        "code": "blind_spot_for",
+        "data": [
+          { "from": 1, "to": 1, "text": "People’s names" },
+          { "from": 2, "to": 2, "text": "Place names" },
+          { "from": 3, "to": 3, "text": "Faces" },
+          { "from": 4, "to": 4, "text": "Geography" },
+          { "from": 5, "to": 5, "text": "Relationships" },
+          { "from": 6, "to": 6, "text": "Time" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "And…",
+        "code": "and",
+        "data": [
+          { "from": 1, "to": 1, "text": "In large gatherings" },
+          { "from": 2, "to": 2, "text": "In combat" },
+          { "from": 3, "to": 3, "text": "At morning" },
+          { "from": 4, "to": 4, "text": "At night" },
+          { "from": 5, "to": 5, "text": "When alone" },
+          { "from": 6, "to": 6, "text": "After a drink" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Small steed",
+      "guard": 2,
+      "clarity": 8,
+      "spirit": 5,
+      "vigour": 9
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Heavy staff",
+        "type": "weapon",
+        "damage": "d10",
+        "hefty": false,
+        "long": true,
+        "slow": false
+      },
+      { "name": "Gambeson", "type": "coat", "armor": 1 },
+      { "name": "Brass-studded brigandine", "type": "plate", "armor": 1 },
+      {
+        "name": "Perfect recall",
+        "type": "misc",
+        "description": "You remember everything you have ever experienced perfectly, with a few limitations, see below"
+      }
+    ]
+  },
+  {
+    "type": "The Meteor Knight",
+    "description": "A star of truth, fell from ahigh. Such lumous ones should wear no lie",
+    "ability": {
+      "name": "Star Fall",
+      "description": "You never suffer Damage from falling, unless landing on something harmful. When you land from a fall of at least 12ft you may release a shockwave (d8 blast)."
+    },
+    "passion": {
+      "name": "Authenticity",
+      "description": "Restore SPI when you reveal your identity or intentions at an inconvenient moment."
+    },
+    "flavor": {
+      "name": "An elaborate trident",
+      "flavor1": {
+        "name": "Appearance",
+        "code": "appearance",
+        "data": [
+          { "from": 1, "to": 1, "text": "Silver rings" },
+          { "from": 2, "to": 2, "text": "Blackened iron" },
+          { "from": 3, "to": 3, "text": "Two-headed" },
+          { "from": 4, "to": 4, "text": "Faint golden glow" },
+          { "from": 5, "to": 5, "text": "Five prongs" },
+          { "from": 6, "to": 6, "text": "Telescopic shaft" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Ability",
+        "code": "ability",
+        "data": [
+          { "from": 1, "to": 1, "text": "Can be thrown (d6)" },
+          {
+            "from": 2,
+            "to": 2,
+            "text": "Can be recalled to your hand when in sight"
+          },
+          { "from": 3, "to": 3, "text": "+d8 vs aquatic beings" },
+          { "from": 4, "to": 4, "text": "d8 vs flying beings" },
+          { "from": 5, "to": 5, "text": "Points to fresh water" },
+          { "from": 6, "to": 6, "text": "Utterly unbreakable" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Limping steed",
+      "biography": "Won’t be hurried",
+      "guard": 4,
+      "clarity": 8,
+      "spirit": 5,
+      "vigour": 12
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Elaborate trident",
+        "type": "weapon",
+        "description": "See below",
+        "damage": "d10",
+        "hefty": false,
+        "long": true,
+        "slow": false
+      },
+      { "name": "Brass mail", "type": "coat", "armor": 1 },
+      {
+        "name": "Moon oil",
+        "type": "misc",
+        "description": "When rubbed on an object you could lift it renders the object weightless until washed with water"
+      }
+    ]
+  },
+  {
+    "type": "The Gazer Knight",
+    "description": "The blood sees through time aflow. To certain souls, a glimpse they show",
+    "ability": {
+      "name": "Glimpse of Fate",
+      "description": "Once per day you can undo a single action performed by you or your Company, declaring it was in fact a minor vision you received. Play as if it never happened."
+    },
+    "passion": {
+      "name": "Respect",
+      "description": "Restore SPI when you yield to a Seer."
+    },
+    "flavor": {
+      "name": "Tapestry story",
+      "flavor1": {
+        "name": "Event",
+        "code": "event",
+        "data": [
+          { "from": 1, "to": 1, "text": "Birth of…" },
+          { "from": 2, "to": 2, "text": "Great deeds of…" },
+          { "from": 3, "to": 3, "text": "Ambitions of…" },
+          { "from": 4, "to": 4, "text": "Shameful death of…" },
+          { "from": 5, "to": 5, "text": "Glorious death of…" },
+          { "from": 6, "to": 6, "text": "Peaceful death of…" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Subject",
+        "code": "subject",
+        "data": [
+          { "from": 1, "to": 1, "text": "A random Seer" },
+          { "from": 2, "to": 2, "text": "A random Knight" },
+          { "from": 3, "to": 3, "text": "Yourself" },
+          { "from": 4, "to": 4, "text": "One of the Company" },
+          { "from": 5, "to": 5, "text": "The Realm ruler" },
+          { "from": 6, "to": 6, "text": "An unknown figure" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Blueish steed",
+      "guard": 3,
+      "clarity": 10,
+      "spirit": 5,
+      "vigour": 12
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Toothed blade",
+        "type": "misc",
+        "description": "D8 , +d8 against Seers"
+      },
+      { "name": "Tapestry cloak", "type": "misc", "description": "See below" },
+      { "name": "Mail", "type": "coat", "armor": 1 },
+      {
+        "name": "Flickerlamp",
+        "type": "misc",
+        "description": "A warm lantern that casts its shadows toward the nearest Seer"
+      }
+    ]
+  },
+  {
+    "type": "The Mule Knight",
+    "description": "A humble beast, no roar or flight. Beneath the grey a show of might",
+    "ability": {
+      "name": "Lowly Shroud",
+      "description": "At any time you may choose to have somebody observing you be utterly convinced that you are just a humble, unarmed peasant, and your steed a mule."
+    },
+    "passion": {
+      "name": "Kindness",
+      "description": "Restore SPI when you stop an act of cruelty."
+    },
+    "flavor": {
+      "name": "Explosives",
+      "flavor1": {
+        "name": "Form Explosion",
+        "code": "form_explosion",
+        "data": [
+          { "from": 1, "to": 1, "text": "Ashen pinecone" },
+          { "from": 2, "to": 2, "text": "Vial of red dust" },
+          { "from": 3, "to": 3, "text": "Bottle of white oil" },
+          { "from": 4, "to": 4, "text": "Hellfire chestnut" },
+          { "from": 5, "to": 5, "text": "Preserved drake gizzard" },
+          { "from": 6, "to": 6, "text": "Firebird egg" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Trigger",
+        "code": "trigger",
+        "data": [
+          { "from": 1, "to": 1, "text": "Water" },
+          { "from": 2, "to": 2, "text": "Fire" },
+          { "from": 3, "to": 3, "text": "A command word" },
+          { "from": 4, "to": 4, "text": "Touch of skin" },
+          { "from": 5, "to": 5, "text": "Light" },
+          { "from": 6, "to": 6, "text": "Touching ground" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Tall steed",
+      "guard": 2,
+      "clarity": 7,
+      "spirit": 6,
+      "vigour": 14
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Weighted staff",
+        "type": "weapon",
+        "description": "Long",
+        "damage": "d10",
+        "hefty": false,
+        "long": true,
+        "slow": false
+      },
+      { "name": "Polished chainmail", "type": "coat", "armor": 1 },
+      {
+        "name": "3 explosives",
+        "type": "misc",
+        "description": "d8 blast, see below"
+      }
+    ]
+  },
+  {
+    "type": "The Halo Knight",
+    "description": "A trail of hope across the land. In sorrow’s face, bright reprimand",
+    "ability": {
+      "name": "Luminous Eruption",
+      "description": "Use once per Phase. A light source you are holding briefly illuminates the entire Hex and causes d12 Damage to nearby beings who live in darkness."
+    },
+    "passion": {
+      "name": "Valour",
+      "description": "Restore SPI when you engage in combat against the odds."
+    },
+    "flavor": {
+      "name": "Repairing the mistvial",
+      "flavor1": {
+        "name": "Material Requirement",
+        "code": "material_requirement",
+        "data": [
+          { "from": 1, "to": 1, "text": "Blood" },
+          { "from": 2, "to": 2, "text": "Sand" },
+          { "from": 3, "to": 3, "text": "Smoke" },
+          { "from": 4, "to": 4, "text": "Milk" },
+          { "from": 5, "to": 5, "text": "Salt" },
+          { "from": 6, "to": 6, "text": "Silk" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Other Requirement",
+        "code": "other_requirement",
+        "data": [
+          { "from": 1, "to": 1, "text": "Midnight ritual" },
+          { "from": 2, "to": 2, "text": "A Seer’s blessing" },
+          { "from": 3, "to": 3, "text": "You must be Wounded" },
+          { "from": 4, "to": 4, "text": "Coin sacrifice" },
+          { "from": 5, "to": 5, "text": "Light of sunrise" },
+          { "from": 6, "to": 6, "text": "Bird nest" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Wild steed",
+      "biography": "Will not be ridden by any but you",
+      "guard": 3,
+      "clarity": 5,
+      "spirit": 7,
+      "vigour": 15
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Crescent axe",
+        "type": "weapon",
+        "damage": "d8",
+        "hefty": true,
+        "long": false,
+        "slow": false
+      },
+      { "name": "Ringmail", "type": "coat", "armor": 1 },
+      { "name": "Kite shield", "type": "shield", "armor": 1, "damage": "d4" },
+      {
+        "name": "Mistvial",
+        "type": "misc",
+        "description": "When broken, thick mist rolls in over the whole Hex for the rest of the Phase. See below for repair requirements"
+      }
+    ]
+  },
+  {
+    "type": "The Iron Knight",
+    "description": "As sword abend, as plate afold,. As shield asplint, a tale atold.",
+    "ability": {
+      "name": "Heightened Sharpness",
+      "description": "When you perform a Strong Gambit with a bladed weapon you may choose one of the following as the effect, the target receiving a Save as normal: • Take a limb • Take a head if their GD is 0"
+    },
+    "passion": {
+      "name": "Diligence",
+      "description": "Restore SPI when refusing a shortcut."
+    },
+    "flavor": {
+      "name": "Origin of the cleavingblade",
+      "flavor1": {
+        "name": "Out of a…",
+        "code": "out_of_a",
+        "data": [
+          { "from": 1, "to": 1, "text": "Vibrant forest" },
+          { "from": 2, "to": 2, "text": "High waterfall" },
+          { "from": 3, "to": 3, "text": "Roaring sea" },
+          { "from": 4, "to": 4, "text": "Broken boulder" },
+          { "from": 5, "to": 5, "text": "Narrow cave" },
+          { "from": 6, "to": 6, "text": "Dead tree" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "At a time of…",
+        "code": "at_a_time_of",
+        "data": [
+          { "from": 1, "to": 1, "text": "Contentment" },
+          { "from": 2, "to": 2, "text": "Desperation" },
+          { "from": 3, "to": 3, "text": "Victory" },
+          { "from": 4, "to": 4, "text": "Anger" },
+          { "from": 5, "to": 5, "text": "Sorrow" },
+          { "from": 6, "to": 6, "text": "Transition" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Dark steed",
+      "guard": 3,
+      "clarity": 7,
+      "spirit": 6,
+      "vigour": 11
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Cleavingblade",
+        "type": "weapon",
+        "description": "See below",
+        "damage": "2d8",
+        "hefty": false,
+        "long": true,
+        "slow": false
+      },
+      { "name": "Mail", "type": "coat", "armor": 1 },
+      { "name": "Plate pauldrons", "type": "plate", "armor": 1 },
+      {
+        "name": "Inscribed scabbard",
+        "type": "misc",
+        "description": "Shows a different scene each morning, hinting at the nearest Myth"
+      }
+    ]
+  },
+  {
+    "type": "The Mirror Knight",
+    "description": "In eyes ajust, the given got. Blow for blow, from one shared l",
+    "ability": {
+      "name": "Reflection of Blood",
+      "description": "When you are Wounded, the attacker suffers the same amount of VIG loss as you. When you are Scarred the attacker gets the same Scar."
+    },
+    "passion": {
+      "name": "Egality",
+      "description": "Restore SPI when you give somebody else their fair share."
+    },
+    "flavor": {
+      "name": "Memories with your steed",
+      "flavor1": {
+        "name": "Knight",
+        "code": "knight",
+        "data": [
+          { "from": 1, "to": 1, "text": "Found a lost treasure" },
+          { "from": 2, "to": 2, "text": "Avenged family" },
+          { "from": 3, "to": 3, "text": "Won a tournament" },
+          { "from": 4, "to": 4, "text": "Escaped capture" },
+          { "from": 5, "to": 5, "text": "Broke a siege" },
+          { "from": 6, "to": 6, "text": "Rescued a loved-one" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Steed",
+        "code": "steed",
+        "data": [
+          { "from": 1, "to": 1, "text": "Fought bravely" },
+          { "from": 2, "to": 2, "text": "Galloped all night" },
+          { "from": 3, "to": 3, "text": "Spotted an ambush" },
+          { "from": 4, "to": 4, "text": "Returned from death" },
+          { "from": 5, "to": 5, "text": "Lost an eye" },
+          { "from": 6, "to": 6, "text": "Shrugged off arrows" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Faded steed",
+      "biography": "You have memories together; see below",
+      "guard": 3,
+      "clarity": 8,
+      "spirit": 5,
+      "vigour": 9
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Hook-axe",
+        "type": "weapon",
+        "damage": "d8",
+        "hefty": true,
+        "long": false,
+        "slow": false
+      },
+      {
+        "name": "3 throwing axes",
+        "type": "weapon",
+        "damage": "d6",
+        "hefty": false,
+        "long": false,
+        "slow": false
+      },
+      { "name": "Round shield", "type": "shield", "armor": 1, "damage": "d4" },
+      {
+        "name": "Hushingbell",
+        "type": "misc",
+        "description": "Those who hear the bell hear nothing else"
+      }
+    ]
+  },
+  {
+    "type": "The Dusk Knight",
+    "description": "Each touch of iron takes a price, in breath or blood or bone. A nasty cut takes something worse, the warmth of distant home",
+    "ability": {
+      "name": "Sunder Memory",
+      "description": "When you Wound a target you can rob them of a single specific memory. If it is a Mortal Wound then you can remove all memory of a specific place, thing, person, or event."
+    },
+    "passion": {
+      "name": "Temperance",
+      "description": "Restore SPI when you refuse a luxury."
+    },
+    "flavor": {
+      "name": "A tattered poem",
+      "flavor1": {
+        "name": "Start",
+        "code": "start",
+        "data": [
+          { "from": 1, "to": 1, "text": "Twin Knights are lost in the woods" },
+          {
+            "from": 2,
+            "to": 2,
+            "text": "The Lion and the Lizard are bitter rivals"
+          },
+          { "from": 3, "to": 3, "text": "A mother hates her six ugly sons" },
+          {
+            "from": 4,
+            "to": 4,
+            "text": "A hermit lambasts the stars for his sad life"
+          },
+          { "from": 5, "to": 5, "text": "A clever chicken outwits a farmer" },
+          {
+            "from": 6,
+            "to": 6,
+            "text": "A poet wastes her life fleeing from death"
+          }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "End",
+        "code": "end",
+        "data": [
+          { "from": 1, "to": 1, "text": "They’re eaten by a pack of wolves" },
+          { "from": 2, "to": 2, "text": "They all die of a disgusting plague" },
+          {
+            "from": 3,
+            "to": 3,
+            "text": "It turns into a call to find the City"
+          },
+          {
+            "from": 4,
+            "to": 4,
+            "text": "It devolves into psychedelic nonsense"
+          },
+          { "from": 5, "to": 5, "text": "It ends on a literal cliffhanger" },
+          { "from": 6, "to": 6, "text": "They all lived happily ever after" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Auburn steed",
+      "guard": 2,
+      "clarity": 8,
+      "spirit": 6,
+      "vigour": 12
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Longhammer",
+        "type": "weapon",
+        "damage": "d10",
+        "hefty": false,
+        "long": true,
+        "slow": false
+      },
+      {
+        "name": "3 javelins",
+        "type": "weapon",
+        "damage": "d6",
+        "hefty": false,
+        "long": false,
+        "slow": false
+      },
+      {
+        "name": "Pouch of wolfnuts",
+        "type": "misc",
+        "description": "Repellent to canines"
+      },
+      {
+        "name": "Poem on tattered parchment",
+        "type": "misc",
+        "description": "See below"
+      }
+    ]
+  },
+  {
+    "type": "The Coin Knight",
+    "description": "In arg or aur, decisions spun. A prize, a life, lost or won",
+    "ability": {
+      "name": "Thrown to Chance",
+      "description": "Use instead of attacking normally. Flip a coin. Heads the target is killed, tails you are killed. This is final."
+    },
+    "passion": {
+      "name": "Generosity",
+      "description": "Restore SPI when you give generously to somebody in need."
+    },
+    "flavor": {
+      "name": "Sound of the flute",
+      "flavor1": {
+        "name": "Loved by",
+        "code": "loved_by",
+        "data": [
+          { "from": 1, "to": 1, "text": "Children" },
+          { "from": 2, "to": 2, "text": "Cats" },
+          { "from": 3, "to": 3, "text": "Nobles" },
+          { "from": 4, "to": 4, "text": "Knights Your" },
+          { "from": 5, "to": 5, "text": "Birds of prey" },
+          { "from": 6, "to": 6, "text": "Sea creatures" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Hated by",
+        "code": "hated_by",
+        "data": [
+          { "from": 1, "to": 1, "text": "Everybody else" },
+          { "from": 2, "to": 2, "text": "Proper musicians" },
+          { "from": 3, "to": 3, "text": "Rodents" },
+          { "from": 4, "to": 4, "text": "Company" },
+          { "from": 5, "to": 5, "text": "Seers" },
+          { "from": 6, "to": 6, "text": "Songbirds" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Arctic steed",
+      "biography": "Long coat turns white in winter",
+      "guard": 3,
+      "clarity": 8,
+      "spirit": 7,
+      "vigour": 14
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Morningstar",
+        "type": "weapon",
+        "damage": "d8",
+        "hefty": true,
+        "long": false,
+        "slow": false
+      },
+      { "name": "Roundshield", "type": "shield", "armor": 1, "damage": "d4" },
+      { "name": "Gambeson", "type": "coat", "armor": 1 },
+      { "name": "Stone-studded brigandine", "type": "plate", "armor": 1 },
+      {
+        "name": "Jaunty flute",
+        "type": "misc",
+        "description": "Can only play a certain type of music, see below"
+      }
+    ]
+  },
+  {
+    "type": "The Mock Knight",
+    "description": "Sycamore, leather, felt and strings. In heartless chest a soul still sings",
+    "ability": {
+      "name": "Impression of Life",
+      "description": "You do not need to breathe, eat, drink, sleep, or love, but still feel the drives."
+    },
+    "passion": {
+      "name": "Imitation",
+      "description": "Restore SPI when you pass for human while under scrutiny."
+    },
+    "flavor": {
+      "name": "Unnatural body",
+      "flavor1": {
+        "name": "Bones of…",
+        "code": "bones_of",
+        "data": [
+          { "from": 1, "to": 1, "text": "Ivory" },
+          { "from": 2, "to": 2, "text": "Bronze" },
+          { "from": 3, "to": 3, "text": "Sapling branches" },
+          { "from": 4, "to": 4, "text": "String" },
+          { "from": 5, "to": 5, "text": "Wooden rods" },
+          { "from": 6, "to": 6, "text": "Iron chain" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Skin of…",
+        "code": "skin_of",
+        "data": [
+          { "from": 1, "to": 1, "text": "Leather" },
+          { "from": 2, "to": 2, "text": "Felt" },
+          { "from": 3, "to": 3, "text": "Silk" },
+          { "from": 4, "to": 4, "text": "Wool" },
+          { "from": 5, "to": 5, "text": "Parchment" },
+          { "from": 6, "to": 6, "text": "Clay" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Well-groomed steed",
+      "biography": "A real horse",
+      "guard": 2,
+      "clarity": 8,
+      "spirit": 6,
+      "vigour": 12
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "War flail",
+        "type": "weapon",
+        "damage": "d10",
+        "hefty": false,
+        "long": true,
+        "slow": false
+      },
+      {
+        "name": "Unnatural body concealed beneath plate suit, hood, and clothes",
+        "type": "plate",
+        "description": "See below",
+        "armor": 1
+      }
+    ]
+  },
+  {
+    "type": "The Mask Knight",
+    "description": "You call for the truth from me?. I will not offer you that which cannot be found",
+    "ability": {
+      "name": "Thousand Faces",
+      "description": "You can assume the face of anybody you have touched, but your body and voice are unchanged."
+    },
+    "passion": {
+      "name": "Vigilance",
+      "description": "Restore SPI when you prevent a betrayal."
+    },
+    "flavor": {
+      "name": "Masked armour",
+      "flavor1": {
+        "name": "Appearance",
+        "code": "appearance",
+        "data": [
+          { "from": 1, "to": 1, "text": "Youthful" },
+          { "from": 2, "to": 2, "text": "Beautiful" },
+          { "from": 3, "to": 3, "text": "Misshapen" },
+          { "from": 4, "to": 4, "text": "Abstract" },
+          { "from": 5, "to": 5, "text": "Skull" },
+          { "from": 6, "to": 6, "text": "Elder" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Design",
+        "code": "design",
+        "data": [
+          { "from": 1, "to": 1, "text": "Horned" },
+          { "from": 2, "to": 2, "text": "Two-faced" },
+          { "from": 3, "to": 3, "text": "Blindfolded" },
+          { "from": 4, "to": 4, "text": "Scarred" },
+          { "from": 5, "to": 5, "text": "Roaring" },
+          { "from": 6, "to": 6, "text": "Crowned" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Silver steed",
+      "guard": 4,
+      "clarity": 8,
+      "spirit": 5,
+      "vigour": 12
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Splittingaxe",
+        "type": "weapon",
+        "damage": "d10",
+        "hefty": false,
+        "long": true,
+        "slow": false
+      },
+      { "name": "Mail", "type": "coat", "armor": 1 },
+      {
+        "name": "Masked helm",
+        "type": "helm",
+        "description": "See below",
+        "armor": 1
+      },
+      {
+        "name": "Star ink and parchment",
+        "type": "misc",
+        "description": "Writing only shows under starlight at night"
+      }
+    ]
+  },
+  {
+    "type": "The Bone Knight",
+    "description": "Ribble rabble, ronky donk, they bounce a duckle dine. Clatter clink, clanky tank, a rib, a skull, a spine",
+    "ability": {
+      "name": "Bone Magnate",
+      "description": "When you make a genuine trade, a bone for a bone, learn something about the individual that the acquired bone came from, or something that they knew in life."
+    },
+    "passion": {
+      "name": "Acumen",
+      "description": "Restore SPI when you come out better from a bargain."
+    },
+    "flavor": {
+      "name": "Box of bones",
+      "flavor1": {
+        "name": "The Box",
+        "code": "the_box",
+        "data": [
+          { "from": 1, "to": 1, "text": "Silver coffer" },
+          { "from": 2, "to": 2, "text": "Ivory cage" },
+          { "from": 3, "to": 3, "text": "Bronze cylinder" },
+          { "from": 4, "to": 4, "text": "Velvet pouch" },
+          { "from": 5, "to": 5, "text": "Painted wooden case" },
+          { "from": 6, "to": 6, "text": "Gilded clam shell" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "The Bones",
+        "code": "the_bones",
+        "data": [
+          { "from": 1, "to": 1, "text": "Sorted by age" },
+          { "from": 2, "to": 2, "text": "Sorted by size" },
+          { "from": 3, "to": 3, "text": "Sorted by habitat" },
+          { "from": 4, "to": 4, "text": "Sorted by beauty" },
+          { "from": 5, "to": 5, "text": "Sorted by virtue" },
+          { "from": 6, "to": 6, "text": "Unsorted chaos" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Marsh steed",
+      "biography": "Moves effortlessly on bog and marsh",
+      "guard": 3,
+      "clarity": 8,
+      "spirit": 5,
+      "vigour": 12
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Needledagger",
+        "type": "misc",
+        "description": "D6, +d6 against armoured targets"
+      },
+      {
+        "name": "Jagged buckler",
+        "type": "shield",
+        "armor": 1,
+        "damage": "d4"
+      },
+      { "name": "Box of bones", "type": "misc", "description": "See below" }
+    ]
+  },
+  {
+    "type": "The Salt Knight",
+    "description": "Saline stink adwells in every depth. No matter how calm the surface",
+    "ability": {
+      "name": "Inspire Ire",
+      "description": "Activate at the end of your turn. Until the next turn, any enemies that Attack targets other than you lose d10 SPI after the Attack."
+    },
+    "passion": {
+      "name": "Mettle",
+      "description": "Restore SPI when accepting a non-combat challenge with the odds set against you."
+    },
+    "flavor": {
+      "name": "The everflask",
+      "flavor1": {
+        "name": "Design",
+        "code": "design",
+        "data": [
+          { "from": 1, "to": 1, "text": "Leather pouch" },
+          { "from": 2, "to": 2, "text": "Brass horn" },
+          { "from": 3, "to": 3, "text": "Twisted silver" },
+          { "from": 4, "to": 4, "text": "Mottled stone" },
+          { "from": 5, "to": 5, "text": "White wood" },
+          { "from": 6, "to": 6, "text": "Frosted glass" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Thirst",
+        "code": "thirst",
+        "data": [
+          { "from": 1, "to": 1, "text": "A story" },
+          { "from": 2, "to": 2, "text": "A blade" },
+          { "from": 3, "to": 3, "text": "A small creature" },
+          { "from": 4, "to": 4, "text": "Delicious fruit" },
+          { "from": 5, "to": 5, "text": "Honey" },
+          { "from": 6, "to": 6, "text": "Music" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Scaled steed",
+      "guard": 3,
+      "clarity": 8,
+      "spirit": 5,
+      "vigour": 12
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Spined mace",
+        "type": "weapon",
+        "damage": "d8",
+        "hefty": true,
+        "long": false,
+        "slow": false
+      },
+      {
+        "name": "Javelin",
+        "type": "weapon",
+        "damage": "d6",
+        "hefty": false,
+        "long": false,
+        "slow": false
+      },
+      { "name": "Coraline mail", "type": "coat", "armor": 1 },
+      {
+        "name": "Everflask",
+        "type": "misc",
+        "description": "Contains an endless supply of fresh water as  as its thirst is sated with each use, see below"
+      }
+    ]
+  },
+  {
+    "type": "The Violet Knight",
+    "description": "A glow unseen, from neath a dream. Illuminates the fabric’s seam",
+    "ability": {
+      "name": "Light Beyond Light",
+      "description": "You can cause any metal object you hold to emit a bright light that only you can see. Bees, butterflies, and hedgehogs can also see the light."
+    },
+    "passion": {
+      "name": "Positivity",
+      "description": "Restore SPI when you raise somebody’s mood."
+    },
+    "flavor": {
+      "name": "A steed without a name",
+      "flavor1": {
+        "name": "Why?",
+        "code": "why",
+        "data": [
+          { "from": 1, "to": 1, "text": "Seer’s orders" },
+          { "from": 2, "to": 2, "text": "It frightens you" },
+          { "from": 3, "to": 3, "text": "The word is forgotten" },
+          { "from": 4, "to": 4, "text": "You can’t speak it" },
+          { "from": 5, "to": 5, "text": "It dies when named" },
+          { "from": 6, "to": 6, "text": "Its name has power" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "A Strange Steed",
+        "code": "a_strange_steed",
+        "data": [
+          { "from": 1, "to": 1, "text": "Cannot utter a sound" },
+          { "from": 2, "to": 2, "text": "Cannot ride through water" },
+          { "from": 3, "to": 3, "text": "Seems more comfortable at night" },
+          { "from": 4, "to": 4, "text": "Arrows cannot harm it" },
+          { "from": 5, "to": 5, "text": "Can ride on sea water" },
+          { "from": 6, "to": 6, "text": "Other steeds show fealty to it" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Nameless steed",
+      "biography": "See below",
+      "guard": 1,
+      "clarity": 8,
+      "spirit": 4,
+      "vigour": 12
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Grand mace",
+        "type": "weapon",
+        "damage": "d10",
+        "hefty": false,
+        "long": true,
+        "slow": false
+      },
+      { "name": "Mail", "type": "coat", "armor": 1 },
+      { "name": "Reflective scale", "type": "plate", "armor": 1 },
+      {
+        "name": "Flattering handmirror",
+        "type": "misc",
+        "description": "Shows the viewer’s ideal vision of themselves"
+      }
+    ]
+  },
+  {
+    "type": "The Cosmic Knight",
+    "description": "Countless stars dotted in the night. To the eyes of one, each a stain of failure amid purest black",
+    "ability": {
+      "name": "Celestial Retreat",
+      "description": "While you can see the sky you can instantly vanish to a distant sanctuary, leaving a small glowing stone behind. You can rematerialise at the stone at any time."
+    },
+    "passion": {
+      "name": "Constellations",
+      "description": "Restore SPI when you get tell somebody new about the stars as you point to them."
+    },
+    "flavor": {
+      "name": "Strange crossbow",
+      "flavor1": {
+        "name": "Form",
+        "code": "form",
+        "data": [
+          { "from": 1, "to": 1, "text": "Handheld (d6)" },
+          { "from": 2, "to": 2, "text": "Lightwood (d8 hefty)" },
+          { "from": 3, "to": 3, "text": "Repeating (d8 long)" },
+          { "from": 4, "to": 4, "text": "Double (2d6 long)" },
+          { "from": 5, "to": 5, "text": "Bronze (2d8 slow)" },
+          { "from": 6, "to": 6, "text": "Ironwood (d10 slow)" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Twist",
+        "code": "twist",
+        "data": [
+          { "from": 1, "to": 1, "text": "Cannot shoot in dark" },
+          { "from": 2, "to": 2, "text": "Only you can shoot it" },
+          { "from": 3, "to": 3, "text": "Extremely loud clunk" },
+          { "from": 4, "to": 4, "text": "No bolts required" },
+          { "from": 5, "to": 5, "text": "Very painful wounds" },
+          { "from": 6, "to": 6, "text": "Can also be used in melee combat" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Boneless steed",
+      "biography": "Can squeeze through any gap as large as its head",
+      "guard": 3,
+      "clarity": 8,
+      "spirit": 5,
+      "vigour": 10
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Strange crossbow",
+        "type": "weapon",
+        "description": "See below",
+        "hefty": false,
+        "long": false,
+        "slow": false
+      },
+      {
+        "name": "Echostone",
+        "type": "misc",
+        "description": "Can record and repeat one spoken phrase"
+      }
+    ]
+  },
+  {
+    "type": "The Temple Knight",
+    "description": "No blood or cry. Not here, not today",
+    "ability": {
+      "name": "Site of Respite",
+      "description": "You may declare a building that you occupy as peaceful ground. Nobody within the building can bring themselves to attack until you leave."
+    },
+    "passion": {
+      "name": "Quietude",
+      "description": "Restore SPI when bringing peaceful order to a chaotic place."
+    },
+    "flavor": {
+      "name": "The snake speaks",
+      "flavor1": {
+        "name": "Voice",
+        "code": "voice",
+        "data": [
+          { "from": 1, "to": 1, "text": "Pitiful" },
+          { "from": 2, "to": 2, "text": "Mocking" },
+          { "from": 3, "to": 3, "text": "Sinister" },
+          { "from": 4, "to": 4, "text": "Benevolent" },
+          { "from": 5, "to": 5, "text": "Ancient" },
+          { "from": 6, "to": 6, "text": "Loving" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Agenda",
+        "code": "agenda",
+        "data": [
+          { "from": 1, "to": 1, "text": "Your death" },
+          { "from": 2, "to": 2, "text": "Order" },
+          { "from": 3, "to": 3, "text": "Bloodshed" },
+          { "from": 4, "to": 4, "text": "Peace" },
+          { "from": 5, "to": 5, "text": "Chaos" },
+          { "from": 6, "to": 6, "text": "Your ambitions" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Moorland steed",
+      "biography": "Faint smell of heather",
+      "guard": 3,
+      "clarity": 9,
+      "spirit": 6,
+      "vigour": 11
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Spear",
+        "type": "weapon",
+        "damage": "d8",
+        "hefty": true,
+        "long": false,
+        "slow": false
+      },
+      { "name": "White cloak", "type": "misc" },
+      { "name": "Broadshield", "type": "shield", "armor": 1, "damage": "d4" },
+      {
+        "name": "Mummified snake",
+        "type": "misc",
+        "description": "Reptiles will not attack anyone holding it, it speaks to your mind directly, see below"
+      }
+    ]
+  },
+  {
+    "type": "The Fox Knight",
+    "description": "A whimsied whirl, a crafty guise. The truth revealed as sour surprise",
+    "ability": {
+      "name": "Cunning Ploy",
+      "description": "Once per day, declare your current self to be an illusion, dispersing into smoke. The real you is watching from a safe place nearby."
+    },
+    "passion": {
+      "name": "Wits",
+      "description": "Restore SPI when you avoid being tricked or outwitted."
+    },
+    "flavor": {
+      "name": "A hidden blade",
+      "flavor1": {
+        "name": "Design",
+        "code": "design",
+        "data": [
+          { "from": 1, "to": 1, "text": "Twisted ebony handle" },
+          { "from": 2, "to": 2, "text": "Feather motif" },
+          { "from": 3, "to": 3, "text": "Tapered slicer" },
+          { "from": 4, "to": 4, "text": "Fang-like dagger" },
+          { "from": 5, "to": 5, "text": "Long wavy blade" },
+          { "from": 6, "to": 6, "text": "Etched bone" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Ability",
+        "code": "ability",
+        "data": [
+          { "from": 1, "to": 1, "text": "Hidden within your shadow" },
+          { "from": 2, "to": 2, "text": "Can be thrown any distance" },
+          { "from": 3, "to": 3, "text": "+2d10 vs somebody who trusts you" },
+          { "from": 4, "to": 4, "text": "Appears as a twig" },
+          { "from": 5, "to": 5, "text": "Splits into two blades" },
+          { "from": 6, "to": 6, "text": "Harmless to you" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Tunnel steed",
+      "biography": "Can see perfectly in the dark",
+      "guard": 2,
+      "clarity": 10,
+      "spirit": 5,
+      "vigour": 10
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Jagged blade",
+        "type": "weapon",
+        "damage": "d8",
+        "hefty": true,
+        "long": false,
+        "slow": false
+      },
+      { "name": "Buckler", "type": "shield", "armor": 1, "damage": "d4" },
+      { "name": "Foxhelm", "type": "helm", "armor": 1 },
+      {
+        "name": "Hidden blade",
+        "type": "weapon",
+        "description": "See below",
+        "damage": "d6",
+        "hefty": false,
+        "long": false,
+        "slow": false
+      },
+      {
+        "name": "Sealing wax",
+        "type": "misc",
+        "description": "Can render any container watertight and airtight"
+      }
+    ]
+  },
+  {
+    "type": "The Gull Knight",
+    "description": "Tattered wing, loath’ed cry, ugly bill. And yet what heights",
+    "ability": {
+      "name": "Guiding Gust",
+      "description": "Ascend to the top of a vertical surface you are touching, lifted on a burst of wind."
+    },
+    "passion": {
+      "name": "Joy",
+      "description": "Restore SPI when you deliver good news."
+    },
+    "flavor": {
+      "name": "Patchwork armour",
+      "flavor1": {
+        "name": "Some taken from…",
+        "code": "some_taken_from",
+        "data": [
+          { "from": 1, "to": 1, "text": "Fallen soldiers" },
+          { "from": 2, "to": 2, "text": "Ancient tomb" },
+          { "from": 3, "to": 3, "text": "Shipwreck" },
+          { "from": 4, "to": 4, "text": "A fighting pit" },
+          { "from": 5, "to": 5, "text": "A defeated Knight" },
+          { "from": 6, "to": 6, "text": "Thankful militia" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Mixed with…",
+        "code": "mixed_with",
+        "data": [
+          { "from": 1, "to": 1, "text": "Flexible leather" },
+          { "from": 2, "to": 2, "text": "Sleek bronze" },
+          { "from": 3, "to": 3, "text": "Polished steel" },
+          { "from": 4, "to": 4, "text": "Brass studs" },
+          { "from": 5, "to": 5, "text": "Padded coat" },
+          { "from": 6, "to": 6, "text": "Thick furs" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Tempestuous steed",
+      "biography": "Dances joyfully in rain",
+      "guard": 4,
+      "clarity": 8,
+      "spirit": 7,
+      "vigour": 12
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Hooked blade",
+        "type": "weapon",
+        "damage": "d8",
+        "hefty": true,
+        "long": false,
+        "slow": false
+      },
+      {
+        "name": "Patchwork mail",
+        "type": "coat",
+        "description": "See below",
+        "armor": 1
+      },
+      { "name": "Patterned cloak", "type": "misc" },
+      {
+        "name": "Blinding bracelet",
+        "type": "misc",
+        "description": "Anybody wearing the bracelet is blind until they take it off"
+      }
+    ]
+  },
+  {
+    "type": "The Magpie Knight",
+    "description": "Keen eyes see what cold heart seeks. No empty handed fool, this bird",
+    "ability": {
+      "name": "Scourer’s Sense",
+      "description": "If you are searching for something specific you always know for sure whether it is in your immediate surroundings or not."
+    },
+    "passion": {
+      "name": "Heraldry",
+      "description": "Restore SPI when you announce the owner of a banner, crest, or coat of arms, which you can always recognise."
+    },
+    "flavor": {
+      "name": "A treasured memento",
+      "flavor1": {
+        "name": "Item",
+        "code": "item",
+        "data": [
+          { "from": 1, "to": 1, "text": "A dried flower" },
+          { "from": 2, "to": 2, "text": "A sword hilt" },
+          { "from": 3, "to": 3, "text": "A pearl" },
+          { "from": 4, "to": 4, "text": "A scrap of a banner" },
+          { "from": 5, "to": 5, "text": "An old coin" },
+          { "from": 6, "to": 6, "text": "A dog’s collar" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Reminds you of…",
+        "code": "reminds_you_of",
+        "data": [
+          { "from": 1, "to": 1, "text": "A great victory" },
+          { "from": 2, "to": 2, "text": "A shameful defeat" },
+          { "from": 3, "to": 3, "text": "A happy place" },
+          { "from": 4, "to": 4, "text": "A sorrowful place" },
+          { "from": 5, "to": 5, "text": "Somebody you loved" },
+          { "from": 6, "to": 6, "text": "Somebody you hated" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Ironclad steed",
+      "guard": 2,
+      "clarity": 5,
+      "spirit": 5,
+      "vigour": 13,
+      "trample": "A1"
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Heavy cudgel",
+        "type": "weapon",
+        "damage": "d8",
+        "hefty": true,
+        "long": false,
+        "slow": false
+      },
+      {
+        "name": "3 javelins",
+        "type": "weapon",
+        "damage": "d6",
+        "hefty": false,
+        "long": false,
+        "slow": false
+      },
+      {
+        "name": "Twofold pouch containing a memento",
+        "type": "misc",
+        "description": "Items you place in the pouch can only be retrieved by you, see below"
+      }
+    ]
+  },
+  {
+    "type": "The Reliquary Knight",
+    "description": "Final rest, earned in life. The echos linger on",
+    "ability": {
+      "name": "Spirit Call",
+      "description": "Once per day, release the invisible spirit from your reliquary. It will follow a single, specific command. It acts with the general capacities of a normal human but can be invisible and immaterial as needed."
+    },
+    "passion": {
+      "name": "Tradition",
+      "description": "Restore SPI when you ensure a tradition is thoroughly honoured."
+    },
+    "flavor": {
+      "name": "Treasured relic",
+      "flavor1": {
+        "name": "Bodypart",
+        "code": "bodypart",
+        "data": [
+          { "from": 1, "to": 1, "text": "Hand" },
+          { "from": 2, "to": 2, "text": "Skull" },
+          { "from": 3, "to": 3, "text": "Heart" },
+          { "from": 4, "to": 4, "text": "Ribs" },
+          { "from": 5, "to": 5, "text": "Eye" },
+          { "from": 6, "to": 6, "text": "Unknown organ" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Being",
+        "code": "being",
+        "data": [
+          { "from": 1, "to": 1, "text": "Forgotten Seer" },
+          { "from": 2, "to": 2, "text": "Glorious Knight" },
+          { "from": 3, "to": 3, "text": "Deposed monarch" },
+          { "from": 4, "to": 4, "text": "Pitied monster" },
+          { "from": 5, "to": 5, "text": "Hateful bird" },
+          { "from": 6, "to": 6, "text": "Ancient reptile" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Bearded steed",
+      "guard": 3,
+      "clarity": 8,
+      "spirit": 6,
+      "vigour": 12
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "War sickle",
+        "type": "weapon",
+        "damage": "d8",
+        "hefty": true,
+        "long": false,
+        "slow": false
+      },
+      { "name": "Gambeson", "type": "coat", "armor": 1 },
+      { "name": "Carved plate", "type": "plate", "armor": 1 },
+      {
+        "name": "Sack of history tomes, treasured reliquary",
+        "type": "misc",
+        "description": "See below"
+      }
+    ]
+  },
+  {
+    "type": "The Vulture Knight",
+    "description": "Gutly ribbons, blood’s sweet dance. The future calls in gory trance",
+    "ability": {
+      "name": "Carrion Casting",
+      "description": "Spread the innards of the recently dead across the ground. Ask a single question, they point you in a direction that would help."
+    },
+    "passion": {
+      "name": "Thrift",
+      "description": "Restore SPI when you make good use of something you found discarded."
+    },
+    "flavor": {
+      "name": "Sinister armour",
+      "flavor1": {
+        "name": "Material",
+        "code": "material",
+        "data": [
+          { "from": 1, "to": 1, "text": "Burned mail" },
+          { "from": 2, "to": 2, "text": "Blackened bronze" },
+          { "from": 3, "to": 3, "text": "Bloody gambeson" },
+          { "from": 4, "to": 4, "text": "Jagged iron strips" },
+          { "from": 5, "to": 5, "text": "Spiked leather" },
+          { "from": 6, "to": 6, "text": "Barbed scales" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Detail",
+        "code": "detail",
+        "data": [
+          { "from": 1, "to": 1, "text": "Bat wing motif" },
+          { "from": 2, "to": 2, "text": "Blood red embroidery" },
+          { "from": 3, "to": 3, "text": "Shadow is darker" },
+          { "from": 4, "to": 4, "text": "Tattered cloak" },
+          { "from": 5, "to": 5, "text": "Embedded bones" },
+          { "from": 6, "to": 6, "text": "Tiny skulls everywhere" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Bright-eyed steed",
+      "guard": 2,
+      "clarity": 9,
+      "spirit": 5,
+      "vigour": 12
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Black axe",
+        "type": "misc",
+        "description": "D10 , +d10 vs wounded targets"
+      },
+      {
+        "name": "Sinister mail",
+        "type": "coat",
+        "description": "See below",
+        "armor": 1
+      },
+      {
+        "name": "Spidernip nuts",
+        "type": "misc",
+        "description": "Acts as a pleasing stimulant for insects and arachnids when ground to a powder"
+      }
+    ]
+  },
+  {
+    "type": "The Free Knight",
+    "description": "No body, no mind, should live acaged. Yet freedom rarely comes with a whispe",
+    "ability": {
+      "name": "Bond Breaker",
+      "description": "Strike a chain or lock with a metal weapon. Both shatter loudly."
+    },
+    "passion": {
+      "name": "Liberty",
+      "description": "Restore SPI when you release somebody from an unwanted bond."
+    },
+    "flavor": {
+      "name": "The hexshield",
+      "flavor1": {
+        "name": "Ineffective vs",
+        "code": "ineffective_vs",
+        "data": [
+          { "from": 1, "to": 1, "text": "Axes" },
+          { "from": 2, "to": 2, "text": "Arrows" },
+          { "from": 3, "to": 3, "text": "Birds" },
+          { "from": 4, "to": 4, "text": "Spears and polearms" },
+          { "from": 5, "to": 5, "text": "Swords" },
+          { "from": 6, "to": 6, "text": "Blunt arms" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Special Abilit",
+        "code": "special_abilit",
+        "data": [
+          { "from": 1, "to": 1, "text": "Can be thrown (d6)" },
+          {
+            "from": 2,
+            "to": 2,
+            "text": "Allows you to fall safely from any height"
+          },
+          { "from": 3, "to": 3, "text": "Pattern pains Seers" },
+          { "from": 4, "to": 4, "text": "Always floats" },
+          { "from": 5, "to": 5, "text": "Blocks all sound" },
+          { "from": 6, "to": 6, "text": "Bladed (d6 in melee)" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Grassy steed",
+      "biography": "Blends into long grass when sitting",
+      "guard": 2,
+      "clarity": 8,
+      "spirit": 5,
+      "vigour": 11
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Hooked flail",
+        "type": "weapon",
+        "damage": "d8",
+        "hefty": true,
+        "long": false,
+        "slow": false
+      },
+      {
+        "name": "Hexshield",
+        "type": "shield",
+        "description": "See below",
+        "armor": 1,
+        "damage": "d4"
+      },
+      {
+        "name": "Tempest chest",
+        "type": "misc",
+        "description": "When empty, it can draw a storm within, restoring calm weather. If opened when full the storm is released"
+      }
+    ]
+  },
+  {
+    "type": "The Silk Knight",
+    "description": "Judge not a knight on might and favour. Where silk endures, a heart can waver",
+    "ability": {
+      "name": "Adamant Gossamer",
+      "description": "You can draw thin strands of silky string of any length from your mouth. They are utterly unbreakable, but burn to ash in an instant."
+    },
+    "passion": {
+      "name": "Mercy",
+      "description": "Restore SPI when you accept a surrender or plea for forgiveness."
+    },
+    "flavor": {
+      "name": "A young steed",
+      "flavor1": {
+        "name": "Distracted by…",
+        "code": "distracted_by",
+        "data": [
+          { "from": 1, "to": 1, "text": "Smaller animals" },
+          { "from": 2, "to": 2, "text": "Moss" },
+          { "from": 3, "to": 3, "text": "Water" },
+          { "from": 4, "to": 4, "text": "Salt" },
+          { "from": 5, "to": 5, "text": "Fruit" },
+          { "from": 6, "to": 6, "text": "Shiny things" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Scared by…",
+        "code": "scared_by",
+        "data": [
+          { "from": 1, "to": 1, "text": "Other steeds" },
+          { "from": 2, "to": 2, "text": "Fire" },
+          { "from": 3, "to": 3, "text": "Darkness" },
+          { "from": 4, "to": 4, "text": "Children" },
+          { "from": 5, "to": 5, "text": "Music" },
+          { "from": 6, "to": 6, "text": "Being alone" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Young steed",
+      "biography": "See below",
+      "guard": 1,
+      "clarity": 8,
+      "spirit": 6,
+      "vigour": 9
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Delicate halberd",
+        "type": "weapon",
+        "damage": "d10",
+        "hefty": false,
+        "long": true,
+        "slow": false
+      },
+      {
+        "name": "Woven coat armour",
+        "type": "coat",
+        "description": "No protection against fire",
+        "armor": 1
+      },
+      {
+        "name": "Intricate brass puzzle",
+        "type": "misc",
+        "description": "Compelling but impossible"
+      }
+    ]
+  },
+  {
+    "type": "The Tiger Knight",
+    "description": "The ignorant deem beastly realms as mere anarchy. In truth, the structure runs much deeper than our own",
+    "ability": {
+      "name": "Bestial Renown",
+      "description": "Each time you defeat an animal in a contest befitting its strengths, all animals of that type will react favourably to you."
+    },
+    "passion": {
+      "name": "Closure",
+      "description": "Restore SPI when you get an answer that you’ve been seeking for some time."
+    },
+    "flavor": {
+      "name": "A tattooed steed",
+      "flavor1": {
+        "name": "Design",
+        "code": "design",
+        "data": [
+          { "from": 1, "to": 1, "text": "Abstract shapes" },
+          { "from": 2, "to": 2, "text": "Ancient runes" },
+          { "from": 3, "to": 3, "text": "Letters you do not understand" },
+          { "from": 4, "to": 4, "text": "Skulls and bones" },
+          { "from": 5, "to": 5, "text": "Thunderbolts" },
+          { "from": 6, "to": 6, "text": "Thorns and flowers" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Why?",
+        "code": "why",
+        "data": [
+          { "from": 1, "to": 1, "text": "For service in battle" },
+          { "from": 2, "to": 2, "text": "It happened before you bought them" },
+          { "from": 3, "to": 3, "text": "They were born that way" },
+          { "from": 4, "to": 4, "text": "It happened overnight" },
+          { "from": 5, "to": 5, "text": "They appeared slowly" },
+          { "from": 6, "to": 6, "text": "A Seer demanded it" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Tattooed steed",
+      "biography": "See below",
+      "guard": 5,
+      "clarity": 9,
+      "spirit": 5,
+      "vigour": 12
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Fang blades",
+        "type": "weapon",
+        "description": "d8 each when wielded as a pair",
+        "damage": "d6",
+        "hefty": false,
+        "long": false,
+        "slow": false
+      },
+      { "name": "Knotted coat", "type": "coat", "armor": 1 },
+      {
+        "name": "3 phoenix feathers",
+        "type": "misc",
+        "description": "Erupts in flame when dropped on the ground, d8 blast"
+      }
+    ]
+  },
+  {
+    "type": "The Leaf Knight",
+    "description": "No greater gift than bough and bush. What more could we ask from this bountiful land?",
+    "ability": {
+      "name": "Nature’s Vault",
+      "description": "You can wield branches as javelins (d6) or greatspears (d10 long) and eat leaves as a satisfying meal."
+    },
+    "passion": {
+      "name": "Gourmet",
+      "description": "Restore SPI when you eat a new type of fruit or vegetable."
+    },
+    "flavor": {
+      "name": "Why is this stick useful?",
+      "flavor1": {
+        "name": "Use",
+        "code": "use",
+        "data": [
+          {
+            "from": 1,
+            "to": 1,
+            "text": "Instantly cools any liquid it touches"
+          },
+          { "from": 2, "to": 2, "text": "Insects hate the smell" },
+          {
+            "from": 3,
+            "to": 3,
+            "text": "It transforms into 20ft of rope when shaken"
+          },
+          { "from": 4, "to": 4, "text": "Terrifies snakes, eels, and worms" },
+          { "from": 5, "to": 5, "text": "One end is extremely sticky" },
+          {
+            "from": 6,
+            "to": 6,
+            "text": "Seers believe it is a blessing upon you"
+          }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "But…",
+        "code": "but",
+        "data": [
+          { "from": 1, "to": 1, "text": "It’s long and inconvenient to carry" },
+          { "from": 2, "to": 2, "text": "Dogs always want it " },
+          {
+            "from": 3,
+            "to": 3,
+            "text": "It looks just like every other stick"
+          },
+          { "from": 4, "to": 4, "text": "It’s very delicate " },
+          { "from": 5, "to": 5, "text": "It’s extremely flammable " },
+          { "from": 6, "to": 6, "text": "It only works in bright sunlight" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Patchy steed",
+      "guard": 3,
+      "clarity": 5,
+      "spirit": 5,
+      "vigour": 12
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Hooked club",
+        "type": "weapon",
+        "damage": "d8",
+        "hefty": true,
+        "long": false,
+        "slow": false
+      },
+      {
+        "name": "Verdant leather",
+        "type": "coat",
+        "description": "While within foliage",
+        "armor": 1
+      },
+      { "name": "Useful stick", "type": "misc", "description": "See below" },
+      {
+        "name": "Murmur box",
+        "type": "misc",
+        "description": "Creates the illusion of indistinct conversation when open"
+      }
+    ]
+  },
+  {
+    "type": "The Glass Knight",
+    "description": "Revealer of all secrets, in stark, judgemental light. In cold and sharpened heart lies no deceitful curse",
+    "ability": {
+      "name": "Touch of Glass",
+      "description": "You can see through any surface that you place your hand upon."
+    },
+    "passion": {
+      "name": "Curiosity",
+      "description": "Restore SPI when looking somewhere you really shouldn’t."
+    },
+    "flavor": {
+      "name": "Painted armour",
+      "flavor1": {
+        "name": "Main",
+        "code": "main",
+        "data": [
+          { "from": 1, "to": 1, "text": "Indigo" },
+          { "from": 2, "to": 2, "text": "Crimson" },
+          { "from": 3, "to": 3, "text": "Forest green" },
+          { "from": 4, "to": 4, "text": "Teal" },
+          { "from": 5, "to": 5, "text": "Gold" },
+          { "from": 6, "to": 6, "text": "Rose" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Hue Decoration",
+        "code": "hue_decoration",
+        "data": [
+          { "from": 1, "to": 1, "text": "Faces" },
+          { "from": 2, "to": 2, "text": "Vines" },
+          { "from": 3, "to": 3, "text": "Stars" },
+          { "from": 4, "to": 4, "text": "Wolves" },
+          { "from": 5, "to": 5, "text": "Fire" },
+          { "from": 6, "to": 6, "text": "The City" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Chestnut steed",
+      "biography": "Hated by spiders and hates them back",
+      "guard": 3,
+      "clarity": 8,
+      "spirit": 6,
+      "vigour": 11
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Two-pronged pike",
+        "type": "weapon",
+        "damage": "d10",
+        "hefty": false,
+        "long": true,
+        "slow": false
+      },
+      {
+        "name": "Painted mail",
+        "type": "coat",
+        "description": "See below",
+        "armor": 1
+      },
+      {
+        "name": "Witching needle",
+        "type": "misc",
+        "description": "A six-inch spike, can be stuck into any material, and cannot be removed by anybody but you or a Seer"
+      }
+    ]
+  },
+  {
+    "type": "The Hive Knight",
+    "description": "A bed of gluous, parchly cloth, a coat of stickly sleen. Emerged in morning good as new, chirurgery unseen",
+    "ability": {
+      "name": "Chrysaline Rebirth",
+      "description": "At night you may immerse yourself in a cocoon through means you do not fully understand (see below). After a full day you emerge, your VIG restored, and any physical harm cured. This cannot cure death unless the process requires it."
+    },
+    "passion": {
+      "name": "Community",
+      "description": "Restore SPI when you leave a community better off than when you arrived."
+    },
+    "flavor": {
+      "name": "Forming the cocoon",
+      "flavor1": {
+        "name": "You must be",
+        "code": "you_must_be",
+        "data": [
+          { "from": 1, "to": 1, "text": "Fed beyond full" },
+          { "from": 2, "to": 2, "text": "Thoroughly cleaned" },
+          { "from": 3, "to": 3, "text": "Sung to sleep" },
+          { "from": 4, "to": 4, "text": "Set alight" },
+          { "from": 5, "to": 5, "text": "Buried in soil" },
+          { "from": 6, "to": 6, "text": "Beheaded" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "You require",
+        "code": "you_require",
+        "data": [
+          { "from": 1, "to": 1, "text": "Complete darkness" },
+          { "from": 2, "to": 2, "text": "Submersion in water" },
+          { "from": 3, "to": 3, "text": "Milk and honey" },
+          { "from": 4, "to": 4, "text": "Choking smoke" },
+          { "from": 5, "to": 5, "text": "A blanket of leaves" },
+          { "from": 6, "to": 6, "text": "Burning embers" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Hooded steed",
+      "guard": 3,
+      "clarity": 10,
+      "spirit": 5,
+      "vigour": 11
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Rootbow",
+        "type": "weapon",
+        "damage": "d6",
+        "hefty": false,
+        "long": true,
+        "slow": false
+      },
+      {
+        "name": "Countless daggers",
+        "type": "weapon",
+        "damage": "d6",
+        "hefty": false,
+        "long": false,
+        "slow": false
+      },
+      {
+        "name": "Tidal resin",
+        "type": "misc",
+        "description": "When burned, all nearby water becomes still and solid for a while"
+      }
+    ]
+  },
+  {
+    "type": "The Ghoul Knight",
+    "description": "Arise! Arise!. But, for what? For whom?",
+    "ability": {
+      "name": "Rebuked by Death",
+      "description": "Use when you are dead. Return to life. Your body is as you left it, as are your Guard and Virtue scores."
+    },
+    "passion": {
+      "name": "Acceptance",
+      "description": "Restore SPI when warmly welcomed into somebody’s home."
+    },
+    "flavor": {
+      "name": "Wooden animal",
+      "flavor1": {
+        "name": "Animal Type",
+        "code": "animal_type",
+        "data": [
+          { "from": 1, "to": 1, "text": "Turtle" },
+          { "from": 2, "to": 2, "text": "Elephant" },
+          { "from": 3, "to": 3, "text": "Lion cub" },
+          { "from": 4, "to": 4, "text": "Seahorse" },
+          { "from": 5, "to": 5, "text": "Unicorn" },
+          { "from": 6, "to": 6, "text": "Pigeon" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Origin",
+        "code": "origin",
+        "data": [
+          { "from": 1, "to": 1, "text": "Gift from a friend" },
+          { "from": 2, "to": 2, "text": "You stole it" },
+          { "from": 3, "to": 3, "text": "Made yourself" },
+          { "from": 4, "to": 4, "text": "From a parent" },
+          { "from": 5, "to": 5, "text": "Found in a ruin" },
+          { "from": 6, "to": 6, "text": "Found in a river" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Faithful steed",
+      "biography": "Will never abandon you",
+      "guard": 3,
+      "clarity": 8,
+      "spirit": 5,
+      "vigour": 12
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Bearded axe",
+        "type": "weapon",
+        "damage": "d10",
+        "hefty": false,
+        "long": true,
+        "slow": false
+      },
+      { "name": "Dusty mail", "type": "coat", "armor": 1 },
+      {
+        "name": "Cleaner salt ,",
+        "type": "misc",
+        "description": "Renders even the most rotten food safe and delicious"
+      },
+      {
+        "name": "Wooden animal miniature",
+        "type": "misc",
+        "description": "See below"
+      }
+    ]
+  },
+  {
+    "type": "The Weaver Knight",
+    "description": "This and that, might just be that and this. As today were tomorrow, soon yesterday, no truth lies set in stone",
+    "ability": {
+      "name": "Warp & Weft",
+      "description": "Swap the positions of an object you are holding and another object you can see. They must be of a similar size and shape, such as two swords."
+    },
+    "passion": {
+      "name": "Detachment",
+      "description": "Restore SPI when you discard something that you want."
+    },
+    "flavor": {
+      "name": "Unusual thrown weapon",
+      "flavor1": {
+        "name": "Design",
+        "code": "design",
+        "data": [
+          { "from": 1, "to": 1, "text": "Club" },
+          { "from": 2, "to": 2, "text": "Disc" },
+          { "from": 3, "to": 3, "text": "Spike" },
+          { "from": 4, "to": 4, "text": "Bola" },
+          { "from": 5, "to": 5, "text": "Fork" },
+          { "from": 6, "to": 6, "text": "Ball" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Ability",
+        "code": "ability",
+        "data": [
+          { "from": 1, "to": 1, "text": "+d6 in a duel" },
+          { "from": 2, "to": 2, "text": "+d6 vs steeds" },
+          { "from": 3, "to": 3, "text": "+d6 vs fleeing targets" },
+          { "from": 4, "to": 4, "text": "+d6 vs mounted targets" },
+          { "from": 5, "to": 5, "text": "+d6 vs flying targets" },
+          { "from": 6, "to": 6, "text": "+d6 vs targets without a shield" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Orchard steed",
+      "biography": "Can sniff out fruit",
+      "guard": 1,
+      "clarity": 9,
+      "spirit": 5,
+      "vigour": 12
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Two-headed axe",
+        "type": "weapon",
+        "damage": "d8",
+        "hefty": true,
+        "long": false,
+        "slow": false
+      },
+      {
+        "name": "Bronze buckler",
+        "type": "shield",
+        "armor": 1,
+        "damage": "d4"
+      },
+      {
+        "name": "Thrown weapon",
+        "type": "weapon",
+        "description": "See below",
+        "damage": "d6",
+        "hefty": false,
+        "long": false,
+        "slow": false
+      },
+      {
+        "name": "Hushcloth",
+        "type": "misc",
+        "description": "Items fully wrapped in this cloth create no noise"
+      }
+    ]
+  },
+  {
+    "type": "The Thunder Knight",
+    "description": "Thunder!. Should be felt, not heard, else call it a whimper!",
+    "ability": {
+      "name": "Voice of the Skies",
+      "description": "While outdoors, you can shout loud enough to be heard clearly throughout the whole Hex and all adjacent Hexes."
+    },
+    "passion": {
+      "name": "Discord",
+      "description": "Restore SPI when you disrupt a place of order."
+    },
+    "flavor": {
+      "name": "Caged bug",
+      "flavor1": {
+        "name": "Ability",
+        "code": "ability",
+        "data": [
+          { "from": 1, "to": 1, "text": "Jolting bite (d6)" },
+          { "from": 2, "to": 2, "text": "Can slowly eat through metal" },
+          { "from": 3, "to": 3, "text": "Melodious chirp" },
+          {
+            "from": 4,
+            "to": 4,
+            "text": "Can fetch items up to the weight of a coin"
+          },
+          { "from": 5, "to": 5, "text": "Always goes toward food" },
+          { "from": 6, "to": 6, "text": "Agonising but harmless bite" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Manner",
+        "code": "manner",
+        "data": [
+          { "from": 1, "to": 1, "text": "Completely wild" },
+          { "from": 2, "to": 2, "text": "Well-trained" },
+          { "from": 3, "to": 3, "text": "Particularly stupid" },
+          { "from": 4, "to": 4, "text": "Eager to please" },
+          { "from": 5, "to": 5, "text": "Hates you " },
+          { "from": 6, "to": 6, "text": "A bright and noble creature" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Overfed steed",
+      "guard": 2,
+      "clarity": 6,
+      "spirit": 5,
+      "vigour": 12,
+      "trample": "d6"
+    },
+    "companion": {
+      "name": "Caged bug",
+      "biography": "See below",
+      "guard": 5,
+      "clarity": 6,
+      "spirit": 3,
+      "vigour": 2
+    },
+    "items": [
+      {
+        "name": "Forked spear",
+        "type": "weapon",
+        "damage": "d8",
+        "hefty": true,
+        "long": false,
+        "slow": false
+      },
+      { "name": "Oakshield", "type": "shield", "armor": 1, "damage": "d4" }
+    ]
+  },
+  {
+    "type": "The Dust Knight",
+    "description": "Lust and loathing, desire and ire. The two great forces, perhaps just one",
+    "ability": {
+      "name": "Aqueous Repulsion",
+      "description": "You can forcefully repel liquids with an outstretched hand, enough to hold a river at bay for a while."
+    },
+    "passion": {
+      "name": "Entitlement",
+      "description": "Restore SPI when you get something that you were promised but initially denied."
+    },
+    "flavor": {
+      "name": "Preserved fish",
+      "flavor1": {
+        "name": "Flavour",
+        "code": "flavour",
+        "data": [
+          { "from": 1, "to": 1, "text": "Salty" },
+          { "from": 2, "to": 2, "text": "Picante" },
+          { "from": 3, "to": 3, "text": "Sour" },
+          { "from": 4, "to": 4, "text": "Challenging" },
+          { "from": 5, "to": 5, "text": "Soapy" },
+          { "from": 6, "to": 6, "text": "Smoky" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Side Effect",
+        "code": "side_effect",
+        "data": [
+          { "from": 1, "to": 1, "text": "Numbs taste and smell" },
+          { "from": 2, "to": 2, "text": "Very filling" },
+          { "from": 3, "to": 3, "text": "Addictive" },
+          { "from": 4, "to": 4, "text": "VIG Save or vomit" },
+          { "from": 5, "to": 5, "text": "CLA Save or go blind for a moment" },
+          { "from": 6, "to": 6, "text": "SPI Save or weep with intense sorrow" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Spotted steed",
+      "biography": "Hated by other horses",
+      "guard": 3,
+      "clarity": 9,
+      "spirit": 5,
+      "vigour": 12
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Old hammer",
+        "type": "weapon",
+        "damage": "d8",
+        "hefty": false,
+        "long": false,
+        "slow": false
+      },
+      {
+        "name": "Inscribed shield",
+        "type": "shield",
+        "armor": 1,
+        "damage": "d4"
+      },
+      {
+        "name": "Beckoning net",
+        "type": "misc",
+        "description": "Fish wilfully swim into this fishing net"
+      },
+      { "name": "Preserved fish", "type": "misc", "description": "See below" }
+    ]
+  },
+  {
+    "type": "The Fanged Knight",
+    "description": "I can show you why I cannot bare the false smile. Now bare your skin and harden your heart",
+    "ability": {
+      "name": "Sink Teeth",
+      "description": "You can bite (d6) someone, choosing one of the following effects before the bite, occurring only if you Wound them: Regain VIG equal to the VIG that they lose, lower them into normal sleep, show them one of your memories"
+    },
+    "passion": {
+      "name": "Melancholy",
+      "description": "Restore SPI when you dampen the mood."
+    },
+    "flavor": {
+      "name": "References in your scroll",
+      "flavor1": {
+        "name": "Place",
+        "code": "place",
+        "data": [
+          { "from": 1, "to": 1, "text": "A tower" },
+          { "from": 2, "to": 2, "text": "A body of water" },
+          { "from": 3, "to": 3, "text": "A peak" },
+          { "from": 4, "to": 4, "text": "A village" },
+          { "from": 5, "to": 5, "text": "A river" },
+          { "from": 6, "to": 6, "text": "A cave" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Ancestor to",
+        "code": "ancestor_to",
+        "data": [
+          { "from": 1, "to": 1, "text": "The ruler" },
+          { "from": 2, "to": 2, "text": "A Knight" },
+          { "from": 3, "to": 3, "text": "A Seer" },
+          { "from": 4, "to": 4, "text": "All people" },
+          { "from": 5, "to": 5, "text": "You" },
+          { "from": 6, "to": 6, "text": "A Company member" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Noble steed",
+      "guard": 4,
+      "clarity": 5,
+      "spirit": 7,
+      "vigour": 12
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Forked blade",
+        "type": "weapon",
+        "damage": "d8",
+        "hefty": true,
+        "long": false,
+        "slow": false
+      },
+      { "name": "Mail", "type": "coat", "armor": 1 },
+      { "name": "Shell plates", "type": "plate", "armor": 1 },
+      {
+        "name": "Ancient scroll",
+        "type": "misc",
+        "description": "Has references to places in this Realm, but outdated, see below"
+      }
+    ]
+  },
+  {
+    "type": "The Pearl Knight",
+    "description": "Why lurk shellbound in abyssal depths, solitary for life?. All the best secrets come from the mouths and eyes of others",
+    "ability": {
+      "name": "Gift from the Deep",
+      "description": "Produce one pearl each morning, unless you haven’t given or traded your previous pearl. You can see through the eyes of anybody that is carrying one of your pearls."
+    },
+    "passion": {
+      "name": "Gossip",
+      "description": "Restore SPI when you share or receive gossip."
+    },
+    "flavor": {
+      "name": "A blade taken from the sea",
+      "flavor1": {
+        "name": "How do you know?",
+        "code": "how_do_you_know",
+        "data": [
+          { "from": 1, "to": 1, "text": "Aquatic nightmares" },
+          { "from": 2, "to": 2, "text": "A fish told you" },
+          { "from": 3, "to": 3, "text": "It’s cold to the touch" },
+          { "from": 4, "to": 4, "text": "Sudden fear of water" },
+          { "from": 5, "to": 5, "text": "Storms call to you" },
+          { "from": 6, "to": 6, "text": "The waves rebuke you" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Punishment",
+        "code": "punishment",
+        "data": [
+          { "from": 1, "to": 1, "text": "Sea creatures get +d6 against you" },
+          { "from": 2, "to": 2, "text": "You cannot swim in saltwater" },
+          { "from": 3, "to": 3, "text": "River water tastes salty to you" },
+          { "from": 4, "to": 4, "text": "Sailors distrust you" },
+          { "from": 5, "to": 5, "text": "Salt tastes foul to you" },
+          { "from": 6, "to": 6, "text": "Fish is poison to you" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Rose steed",
+      "guard": 3,
+      "clarity": 9,
+      "spirit": 5,
+      "vigour": 12
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Cleaving blade",
+        "type": "weapon",
+        "description": "See below",
+        "damage": "2d8",
+        "hefty": false,
+        "long": true,
+        "slow": false
+      },
+      { "name": "Glossy mail", "type": "coat", "armor": 1 },
+      { "name": "Demi-plate", "type": "plate", "armor": 1 },
+      {
+        "name": "Salincense",
+        "type": "misc",
+        "description": "Smoke from this candle causes plants to wither and die in seconds"
+      }
+    ]
+  },
+  {
+    "type": "The Rat Knight",
+    "description": "In squeakling hole I squashed and curled. Amidst my kin, a kinder world",
+    "ability": {
+      "name": "Verminform",
+      "description": "Take the form of a rat to squeeze into any space that a rat could fit into. You return to your normal form as soon as you are in a space that allows it. You can also speak with rats, who are generally helpful."
+    },
+    "passion": {
+      "name": "Trust",
+      "description": "Restore SPI when giving the benefit of the doubt in a way that leaves you vulnerable."
+    },
+    "flavor": {
+      "name": "Modified armour",
+      "flavor1": {
+        "name": "Type",
+        "code": "type",
+        "data": [
+          { "from": 1, "to": 1, "text": "Leather" },
+          { "from": 2, "to": 2, "text": "Velvet" },
+          { "from": 3, "to": 3, "text": "Fur" },
+          { "from": 4, "to": 4, "text": "Scales" },
+          { "from": 5, "to": 5, "text": "Hair" },
+          { "from": 6, "to": 6, "text": "Straw" }
+        ],
+        "formula": "d6"
+      },
+      "flavor2": {
+        "name": "Modified for…",
+        "code": "modified_for",
+        "data": [
+          { "from": 1, "to": 1, "text": "Fast donning/removal" },
+          { "from": 2, "to": 2, "text": "Fire immunity" },
+          { "from": 3, "to": 3, "text": "Ease of swimming" },
+          { "from": 4, "to": 4, "text": "Total fall protection" },
+          { "from": 5, "to": 5, "text": "Concealing robes" },
+          { "from": 6, "to": 6, "text": "Repellent to rats" }
+        ],
+        "formula": "d6"
+      }
+    },
+    "steed": {
+      "name": "Matted steed",
+      "guard": 3,
+      "clarity": 8,
+      "spirit": 5,
+      "vigour": 12
+    },
+    "companion": null,
+    "items": [
+      {
+        "name": "Pole sickle",
+        "type": "weapon",
+        "damage": "d10",
+        "hefty": false,
+        "long": true,
+        "slow": false
+      },
+      {
+        "name": "3 darts",
+        "type": "weapon",
+        "damage": "d6",
+        "hefty": false,
+        "long": false,
+        "slow": false
+      },
+      {
+        "name": "Modified gambeson",
+        "type": "coat",
+        "description": "See below",
+        "armor": 1
+      },
+      {
+        "name": "Listening horn",
+        "type": "misc",
+        "description": "When placed against a wall, hear everything from the other side in perfect clarity"
+      }
+    ]
+  }
+]

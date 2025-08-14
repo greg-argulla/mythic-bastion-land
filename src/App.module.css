@@ -1,0 +1,228 @@
+.global {
+  background-image: url("./assets/bg.jpg");
+  background-size: cover;
+  font-family: "TexGyreSchola", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  overflow: hidden;
+  height: 600px;
+  padding-bottom: 2rem;
+}
+
+.scrollable {
+  overflow: hidden;
+  height: 520px;
+  width: 500px;
+  padding-bottom: 4rem;
+}
+
+.containerFlex {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.container {
+  padding-left: 3rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.diceContainer {
+  padding-top: 1rem;
+  position: relative;
+}
+
+.line {
+  width: 400px;
+  margin-left: 4.5rem;
+}
+
+.chatScrollable {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 400px;
+  padding: 1rem;
+  padding-left: 3rem;
+  width: 100%;
+}
+
+.oath {
+  margin-top: 2.5rem;
+  margin-left: 4.5rem;
+  width: 400px;
+}
+
+.chatField {
+  width: 440px;
+  height: 2rem;
+  font-size: 1rem;
+  background-color: #edeae3;
+  color: #000;
+  margin-left: 3rem;
+}
+
+.chatField:focus {
+  outline: none;
+  border: 2px solid #387422;
+}
+
+@font-face {
+  font-family: "AnglicanText";
+  src: url("../public/fonts/AnglicanText.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Canterbury";
+  src: url("../public/fonts/Canterbury.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "TexGyreSchola";
+  src: url("../public/fonts/texgyreschola-regular.otf") format("opentype");
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.global input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 2px solid #498334;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* create custom checkbox appearance */
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+
+  /* background-color only for content */
+  background-clip: content-box;
+  border: 1.25px solid #1a2830;
+  border-radius: 0.25rem;
+  background-color: #edeae3;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #374233;
+  border-radius: 0.25rem;
+}
+
+input[type="checkbox"]:focus {
+  outline: none !important;
+  border: 2px solid #498334;
+}
+
+button {
+  border: 1.25px solid #1a2830;
+  border-radius: 0.25rem;
+  background-color: #edeae3;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ffffff;
+}
+
+button:active {
+  background-color: #dddddd;
+}
+
+button:focus {
+  outline: none;
+  border: 2px solid #498334;
+}
+
+table {
+  table-layout: auto;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+:is(td, th) {
+  padding: 0.25rem;
+  border-style: solid;
+  border-color: #1a2830;
+  border-width: 1px;
+}
+
+tr:nth-of-type(odd) {
+  background: #f2ecdf;
+}
+
+select {
+  all: unset;
+  border-radius: 0.25rem;
+  background-color: #edeae3;
+  border: 1.25px solid #1a2830;
+  padding: 0.25rem;
+  color: #374233;
+  font-weight: 500;
+  text-align: center;
+}
+
+select:focus {
+  outline: none;
+  border: 2px solid #498334;
+}
+
+.header {
+  font-family: "Tiller";
+  text-transform: uppercase;
+}
+
+.Sheet {
+  display: flex;
+  padding: 0.5rem 1rem;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.fieldContainer {
+  background: #e3dfd3;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  border-left: 0.25rem #1a2830 solid;
+  max-width: 290px;
+}
+
+.fieldLabel {
+  font-size: 14px;
+}
+
+.field {
+  all: unset;
+  color: #374233;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.field:focus {
+  outline: none;
+  border: 2px solid #498334;
+}
+
+.chatSender {
+  color: #498334;
+  font-size: 16px;
+  margin-top: 0.5rem;
+}
