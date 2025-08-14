@@ -1,5 +1,5 @@
 .global {
-  background-image: url("./assets/bg.jpg");
+  background-image: url("./bg.jpg");
   background-size: cover;
   font-family: "TexGyreSchola", serif;
   font-optical-sizing: auto;
