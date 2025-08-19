@@ -340,7 +340,7 @@ function App() {
               handleKeyDown(e);
             }}
             style={{
-              width: role === "GM" ? "320px" : "440px",
+              width: role === "GM" ? "350px" : "440px",
             }}
           ></input>
           {role === "GM" && (
