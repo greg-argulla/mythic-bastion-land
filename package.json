@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@owlbear-rodeo/sdk": "^3.1.0",
+    "axios": "^1.11.0",
     "classnames": "^2.5.1",
     "modern-normalize": "^3.0.1",
     "react": "^19.0.0",

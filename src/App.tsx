@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import styles from "./App.module.css";
 import classNames from "classnames";
 import OBR, { Metadata } from "@owlbear-rodeo/sdk";
+import axios from "axios";
 
 type Chat = {
   id: number;
@@ -195,7 +196,7 @@ function App() {
     }
   }, [chat]);
 
-  const addMessage = async () => {
+  const addMessage = async (message?: string) => {
     if (text !== "") {
       if (role === "GM") {
         if (text === "/clearchat") {
@@ -207,8 +208,8 @@ function App() {
 
       const newMessage = {
         id: Date.now(),
-        user: role === "GM" ? "GM" : name,
-        message: text.trim(),
+        user: message ? "Seer" : role === "GM" ? "GM" : name,
+        message: message ? message.trim() : text.trim(),
       };
       const newChat = [...myChat, newMessage];
 
@@ -279,6 +280,39 @@ function App() {
     }
   };
 
+  const askTheSeer = async () => {
+    try {
+      const response = await axios.post(
+        "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent",
+        {
+          system_instruction: {
+            parts: [
+              {
+                text: "You are a fantasy writer, If I give you a description, alter it to make it concise and evocative. If I give you a question, answer as if you are the Oracle of mythical land. Please limit it to one paragraph.",
+              },
+            ],
+          },
+          contents: [
+            {
+              parts: [{ text: text }],
+            },
+          ],
+        },
+        {
+          headers: {
+            "Content-Type": "application/json",
+            "X-goog-api-key": import.meta.env.VITE_SECRET_KEY,
+          },
+        }
+      );
+
+      addMessage(response.data.candidates[0].content.parts[0].text);
+      setText("");
+    } catch {
+      addMessage("The Seer stays silent.");
+    }
+  };
+
   return (
     <div className={styles.global}>
       <img className={styles.oath} src={"./assets/Seek.png"} alt="paper" />
@@ -294,16 +328,21 @@ function App() {
             : ""}
         </div>
         <hr className={styles.line} />
-        <input
-          className={styles.chatField}
-          value={text}
-          onChange={(evt) => {
-            setText(evt.target.value);
-          }}
-          onKeyDown={(e) => {
-            handleKeyDown(e);
-          }}
-        ></input>
+        <div className={styles.chatFieldContainer}>
+          <input
+            className={styles.chatField}
+            value={text}
+            onChange={(evt) => {
+              setText(evt.target.value);
+            }}
+            onKeyDown={(e) => {
+              handleKeyDown(e);
+            }}
+          ></input>
+          <button onClick={askTheSeer} className={styles.button}>
+            Ask the Seer
+          </button>
+        </div>
       </div>
     </div>
   );

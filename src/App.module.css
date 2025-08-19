@@ -59,12 +59,18 @@
 }
 
 .chatField {
-  width: 440px;
+  width: 350px;
   height: 2rem;
   font-size: 1rem;
   background-color: #edeae3;
   color: #000;
   margin-left: 3rem;
+}
+
+.chatFieldContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
 }
 
 .chatField:focus {
@@ -129,11 +135,12 @@ input[type="checkbox"]:focus {
   border: 2px solid #498334;
 }
 
-button {
+.button {
   border: 1.25px solid #1a2830;
   border-radius: 0.25rem;
   background-color: #edeae3;
   cursor: pointer;
+  font-size: 12px;
 }
 
 button:hover {
