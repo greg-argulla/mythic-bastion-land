@@ -338,10 +338,15 @@ function App() {
             onKeyDown={(e) => {
               handleKeyDown(e);
             }}
+            style={{
+              width: role === "GM" ? "320px" : "440px",
+            }}
           ></input>
-          <button onClick={askTheSeer} className={styles.button}>
-            Ask the Seer
-          </button>
+          {role === "GM" && (
+            <button onClick={askTheSeer} className={styles.button}>
+              Ask the Seer
+            </button>
+          )}
         </div>
       </div>
     </div>
