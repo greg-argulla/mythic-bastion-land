@@ -322,7 +322,6 @@ function App() {
           {chat.length
             ? chat
                 .sort((a, b) => a.id - b.id)
-                .filter((chat) => chat.user !== "Seer" || role === "GM")
                 .map((chat) => (
                   <ChatInstance chat={chat} key={chat.id} name={name} />
                 ))
@@ -340,14 +339,12 @@ function App() {
               handleKeyDown(e);
             }}
             style={{
-              width: role === "GM" ? "350px" : "440px",
+              width: "440px",
             }}
           ></input>
-          {role === "GM" && (
-            <button onClick={askTheSeer} className={styles.button}>
-              Ask the Seer
-            </button>
-          )}
+          <button onClick={askTheSeer} className={styles.button}>
+            Ask the Seer
+          </button>
         </div>
       </div>
     </div>
